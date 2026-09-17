@@ -1,0 +1,502 @@
+[
+  {
+    "latex_reference": "Grasp3.pdf",
+    "repository_path": "assets/paper/Grasp3.png"
+  },
+  {
+    "latex_reference": "Trasnport3.pdf",
+    "repository_path": "assets/paper/Trasnport3.png"
+  },
+  {
+    "latex_reference": "坐标系4_1.pdf",
+    "repository_path": "assets/paper/coordinate-system.png"
+  },
+  {
+    "latex_reference": "systemV7.pdf",
+    "repository_path": "assets/paper/systemV7.png"
+  },
+  {
+    "latex_reference": "algo1_9.pdf",
+    "repository_path": "assets/paper/algo1_9.png"
+  },
+  {
+    "latex_reference": "constraint_grasp6.pdf",
+    "repository_path": "assets/paper/constraint_grasp6.png"
+  },
+  {
+    "latex_reference": "constraint_transport6.pdf",
+    "repository_path": "assets/paper/constraint_transport6.png"
+  },
+  {
+    "latex_reference": "Visicontrolblock6.pdf",
+    "repository_path": "assets/paper/Visicontrolblock6.png"
+  },
+  {
+    "latex_reference": "force7.pdf",
+    "repository_path": "assets/paper/force7.png"
+  },
+  {
+    "latex_reference": "forcereview_v2.pdf",
+    "repository_path": "assets/paper/forcereview_v2.png"
+  },
+  {
+    "latex_reference": "阻抗5.png",
+    "repository_path": "assets/paper/impedance-adaptation.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball1.png",
+    "repository_path": "assets/paper/simulation/ball1.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball2.png",
+    "repository_path": "assets/paper/simulation/ball2.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball3.png",
+    "repository_path": "assets/paper/simulation/ball3.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball4.png",
+    "repository_path": "assets/paper/simulation/ball4.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball5.png",
+    "repository_path": "assets/paper/simulation/ball5.jpg"
+  },
+  {
+    "latex_reference": "simulation/ball6.png",
+    "repository_path": "assets/paper/simulation/ball6.jpg"
+  },
+  {
+    "latex_reference": "simulation/box1.png",
+    "repository_path": "assets/paper/simulation/box1.jpg"
+  },
+  {
+    "latex_reference": "simulation/box2.png",
+    "repository_path": "assets/paper/simulation/box2.jpg"
+  },
+  {
+    "latex_reference": "simulation/box3.png",
+    "repository_path": "assets/paper/simulation/box3.jpg"
+  },
+  {
+    "latex_reference": "simulation/box4.png",
+    "repository_path": "assets/paper/simulation/box4.jpg"
+  },
+  {
+    "latex_reference": "simulation/box5.png",
+    "repository_path": "assets/paper/simulation/box5.jpg"
+  },
+  {
+    "latex_reference": "simulation/box6.png",
+    "repository_path": "assets/paper/simulation/box6.jpg"
+  },
+  {
+    "latex_reference": "Visio-Desired_Force_why_v2_a.pdf",
+    "repository_path": "assets/paper/Visio-Desired_Force_why_v2_a.png"
+  },
+  {
+    "latex_reference": "Visio-Desired_Force_why_v3_b.pdf",
+    "repository_path": "assets/paper/Visio-Desired_Force_why_v3_b.png"
+  },
+  {
+    "latex_reference": "FRpic/ball/1.PNG",
+    "repository_path": "assets/paper/FRpic/ball/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/ball/2.png",
+    "repository_path": "assets/paper/FRpic/ball/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/ball/3.png",
+    "repository_path": "assets/paper/FRpic/ball/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/ball/4.png",
+    "repository_path": "assets/paper/FRpic/ball/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/ball/5.png",
+    "repository_path": "assets/paper/FRpic/ball/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/ball/6.png",
+    "repository_path": "assets/paper/FRpic/ball/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/1.png",
+    "repository_path": "assets/paper/FRpic/box/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/2.png",
+    "repository_path": "assets/paper/FRpic/box/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/3.png",
+    "repository_path": "assets/paper/FRpic/box/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/4.png",
+    "repository_path": "assets/paper/FRpic/box/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/5.png",
+    "repository_path": "assets/paper/FRpic/box/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/box/6.png",
+    "repository_path": "assets/paper/FRpic/box/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/1.png",
+    "repository_path": "assets/paper/FRpic/basketball/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/2.png",
+    "repository_path": "assets/paper/FRpic/basketball/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/3.png",
+    "repository_path": "assets/paper/FRpic/basketball/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/4.png",
+    "repository_path": "assets/paper/FRpic/basketball/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/5.png",
+    "repository_path": "assets/paper/FRpic/basketball/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/basketball/6.png",
+    "repository_path": "assets/paper/FRpic/basketball/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/1.png",
+    "repository_path": "assets/paper/FRpic/softbox/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/2.png",
+    "repository_path": "assets/paper/FRpic/softbox/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/3.png",
+    "repository_path": "assets/paper/FRpic/softbox/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/4.png",
+    "repository_path": "assets/paper/FRpic/softbox/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/5.png",
+    "repository_path": "assets/paper/FRpic/softbox/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/softbox/6.png",
+    "repository_path": "assets/paper/FRpic/softbox/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/1.png",
+    "repository_path": "assets/paper/FRpic/mango/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/2.png",
+    "repository_path": "assets/paper/FRpic/mango/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/3.png",
+    "repository_path": "assets/paper/FRpic/mango/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/4.png",
+    "repository_path": "assets/paper/FRpic/mango/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/5.png",
+    "repository_path": "assets/paper/FRpic/mango/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/mango/6.png",
+    "repository_path": "assets/paper/FRpic/mango/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/1.png",
+    "repository_path": "assets/paper/FRpic/L/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/2.png",
+    "repository_path": "assets/paper/FRpic/L/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/3.png",
+    "repository_path": "assets/paper/FRpic/L/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/4.png",
+    "repository_path": "assets/paper/FRpic/L/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/5.png",
+    "repository_path": "assets/paper/FRpic/L/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/L/6.png",
+    "repository_path": "assets/paper/FRpic/L/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/1.png",
+    "repository_path": "assets/paper/FRpic/cloth/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/2.png",
+    "repository_path": "assets/paper/FRpic/cloth/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/3.png",
+    "repository_path": "assets/paper/FRpic/cloth/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/4.png",
+    "repository_path": "assets/paper/FRpic/cloth/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/5.png",
+    "repository_path": "assets/paper/FRpic/cloth/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/cloth/6.png",
+    "repository_path": "assets/paper/FRpic/cloth/6.jpg"
+  },
+  {
+    "latex_reference": "real3.pdf",
+    "repository_path": "assets/paper/real3.png"
+  },
+  {
+    "latex_reference": "Stage1.pdf",
+    "repository_path": "assets/paper/Stage1.png"
+  },
+  {
+    "latex_reference": "Stage2.pdf",
+    "repository_path": "assets/paper/Stage2.png"
+  },
+  {
+    "latex_reference": "Stage3.pdf",
+    "repository_path": "assets/paper/Stage3.png"
+  },
+  {
+    "latex_reference": "Stage4.pdf",
+    "repository_path": "assets/paper/Stage4.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/distance_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/ball/distance_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/distance_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/ball/distance_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/d_f_legend.pdf",
+    "repository_path": "assets/paper/EXP08/ball/d_f_legend.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/force_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/ball/force_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/ball/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/4bc.pdf",
+    "repository_path": "assets/paper/EXP08/ball/4bc.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/4de.pdf",
+    "repository_path": "assets/paper/EXP08/ball/4de.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/5bc.pdf",
+    "repository_path": "assets/paper/EXP08/ball/5bc.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/5de.pdf",
+    "repository_path": "assets/paper/EXP08/ball/5de.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/position_legend.pdf",
+    "repository_path": "assets/paper/EXP08/ball/position_legend.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/position_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/ball/position_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/ball/position_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/ball/position_during_transporting.png"
+  },
+  {
+    "latex_reference": "FRpic/fault/left/1.png",
+    "repository_path": "assets/paper/FRpic/fault/left/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/left/2.png",
+    "repository_path": "assets/paper/FRpic/fault/left/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/left/3.png",
+    "repository_path": "assets/paper/FRpic/fault/left/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/right/1.png",
+    "repository_path": "assets/paper/FRpic/fault/right/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/right/2.png",
+    "repository_path": "assets/paper/FRpic/fault/right/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/right/3.png",
+    "repository_path": "assets/paper/FRpic/fault/right/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/leftfail/1.png",
+    "repository_path": "assets/paper/FRpic/fault/leftfail/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/fault/rightfail/1.png",
+    "repository_path": "assets/paper/FRpic/fault/rightfail/1.jpg"
+  },
+  {
+    "latex_reference": "EXP08/fault/d_f_legend.pdf",
+    "repository_path": "assets/paper/EXP08/fault/d_f_legend.png"
+  },
+  {
+    "latex_reference": "EXP08/fault/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/fault/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/box/distance_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/box/distance_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/box/distance_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/box/distance_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/box/force_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/box/force_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/box/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/box/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/box/4bc.pdf",
+    "repository_path": "assets/paper/EXP08/box/4bc.png"
+  },
+  {
+    "latex_reference": "EXP08/box/5bc.pdf",
+    "repository_path": "assets/paper/EXP08/box/5bc.png"
+  },
+  {
+    "latex_reference": "EXP08/box/position_legend.pdf",
+    "repository_path": "assets/paper/EXP08/box/position_legend.png"
+  },
+  {
+    "latex_reference": "EXP08/box/position_during_grasping.pdf",
+    "repository_path": "assets/paper/EXP08/box/position_during_grasping.png"
+  },
+  {
+    "latex_reference": "EXP08/box/position_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/box/position_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/basketball/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/basketball/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/softbox/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/softbox/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/mango/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/mango/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/L/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/L/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/cloth/force_during_transporting.pdf",
+    "repository_path": "assets/paper/EXP08/cloth/force_during_transporting.png"
+  },
+  {
+    "latex_reference": "EXP08/cloth/d_f_legend2.pdf",
+    "repository_path": "assets/paper/EXP08/cloth/d_f_legend2.png"
+  },
+  {
+    "latex_reference": "FRpic/placeball/1.png",
+    "repository_path": "assets/paper/FRpic/placeball/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/placeball/2.png",
+    "repository_path": "assets/paper/FRpic/placeball/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/placeball/3.png",
+    "repository_path": "assets/paper/FRpic/placeball/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/placeball/4.png",
+    "repository_path": "assets/paper/FRpic/placeball/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/placeball/5.png",
+    "repository_path": "assets/paper/FRpic/placeball/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/placeball/6.png",
+    "repository_path": "assets/paper/FRpic/placeball/6.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/1.png",
+    "repository_path": "assets/paper/FRpic/pourbox/1.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/2.png",
+    "repository_path": "assets/paper/FRpic/pourbox/2.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/3.png",
+    "repository_path": "assets/paper/FRpic/pourbox/3.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/4.png",
+    "repository_path": "assets/paper/FRpic/pourbox/4.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/5.png",
+    "repository_path": "assets/paper/FRpic/pourbox/5.jpg"
+  },
+  {
+    "latex_reference": "FRpic/pourbox/6.png",
+    "repository_path": "assets/paper/FRpic/pourbox/6.jpg"
+  },
+  {
+    "latex_reference": "placeball_v2.pdf",
+    "repository_path": "assets/paper/placeball_v2.png"
+  },
+  {
+    "latex_reference": "pourbox_v1.pdf",
+    "repository_path": "assets/paper/pourbox_v1.png"
+  },
+  {
+    "latex_reference": "EXP08/placeball/force_during_placing.pdf",
+    "repository_path": "assets/paper/EXP08/placeball/force_during_placing.png"
+  },
+  {
+    "latex_reference": "EXP08/pourbox/force_during_pouring.pdf",
+    "repository_path": "assets/paper/EXP08/pourbox/force_during_pouring.png"
+  }
+]
