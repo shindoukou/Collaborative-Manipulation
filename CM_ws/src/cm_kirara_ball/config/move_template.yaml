@@ -1,0 +1,131 @@
+
+ball_collision:
+  x: 0.4      
+  y: 0.15
+  z: 0.62
+  r: 0.03
+
+arm:
+  r: 0.03
+
+cost:
+  eff: 0.165
+  rot: 3
+  cos: 0.9
+  cos_2: 0.9
+  object: 0.005
+
+planning:
+  lowbound: 0.16
+  upperbound: 0.18
+  # Collision-free target-center corridor used for constrained neighborhood
+  # samples.  The first state is the grasp endpoint; these are subsequent
+  # transport waypoints ending at goal_generator.target.
+  target_waypoints:
+    - {x: 0.49425101, y: 0.23528031, z: 0.16545135}
+    - {x: 0.49925104, y: 0.24273644, z: 0.17517313}
+    - {x: 0.51764876, y: 0.27993747, z: 0.22398881}
+    - {x: 0.52685866, y: 0.34829149, z: 0.31807841}
+    - {x: 0.51625808, y: 0.39110352, z: 0.38331373}
+    - {x: 0.51023316, y: 0.40124576, z: 0.40279317}
+    - {x: 0.50073645, y: 0.40922203, z: 0.42761862}
+    - {x: 0.47070111, y: 0.41201762, z: 0.49411328}
+    - {x: 0.45881718, y: 0.39160859, z: 0.52579008}
+    - {x: 0.45353722, y: 0.38193156, z: 0.53834180}
+    - {x: 0.44436341, y: 0.34236015, z: 0.56533635}
+    - {x: 0.43806089, y: 0.32536343, z: 0.57596551}
+    - {x: 0.43267791, y: 0.30478821, z: 0.58457063}
+    - {x: 0.42962664, y: 0.29657040, z: 0.58756685}
+    - {x: 0.42314986, y: 0.28300324, z: 0.59176900}
+    - {x: 0.41472849, y: 0.27810140, z: 0.59535664}
+    - {x: 0.41133620, y: 0.27666583, z: 0.59618446}
+    - {x: 0.38966950, y: 0.26990018, z: 0.59629850}
+    - {x: 0.35475374, y: 0.26071371, z: 0.58556059}
+    - {x: 0.34299429, y: 0.25787200, z: 0.58009389}
+
+file_path:
+  pinocchio_file: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/models/urdf/move_newbase.urdf"
+model_path:
+  pinocchio_path: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/models"
+kirara_path: 
+  left: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/manual_20260803/move_left_coeff_20260803.txt"
+  right: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/manual_20260803/move_right_coeff_20260803.txt"
+planned_path:
+  left: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/socket_latest/move_left_planned_path.txt"
+  right: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/socket_latest/move_right_planned_path.txt"
+Joint_init:
+
+  joint_1: -0.274433
+  joint_2: -0.754591
+  joint_3:   1.36658
+  joint_4:  -0.71415
+  joint_5: -0.760704
+  joint_6: 0.332081
+
+  joint_7: -0.0890734
+  joint_8:  -2.9127
+  joint_9: -0.331406
+  joint_10: -2.90782
+  joint_11: -0.575497
+  joint_12: 0.00668706
+
+Joint_final:
+  joint_1: -0.0678256
+  joint_2:  -1.51341
+  joint_3:  1.02452
+  joint_4: -0.677657
+  joint_5: -0.818992
+  joint_6: 0.0
+
+  joint_7: 0.133511
+  joint_8: -1.80848
+  joint_9: -1.00246
+  joint_10: -2.0965
+  joint_11: -0.756731
+  joint_12:  0.0
+
+goal_generator:
+  enabled: true
+  fallback_to_joint_final: false
+
+
+  target_from_reference: false
+  preserve_left_reference: false
+  preserve_right_world_pose: true
+  right_base_translation_delta: {x: -0.0076, y: -0.030655, z: 0.001366}
+  target_offset: {x: 0.0, y: 0.0, z: 0.0}
+  allow_reference_collisions: false
+
+
+
+  stop_at_first_valid: false
+  mode: MOVE
+
+
+  joint_score_weight: 1.0
+  pose_score_weight: 20.0
+  joint_score_weights: [1, 1, 1, 5, 5, 5, 1, 1, 1, 50, 50, 50]
+  max_right_wrist_excursion_rad: 1.0
+
+
+  target: {x: 0.34299429, y: 0.25787200, z: 0.58009389}
+  distance_min: 0.240
+  distance_max: 0.260
+  theta_left: 0.300
+  theta_right: 0.350
+  psi_left: 0.250
+  psi_right: 0.210
+  axis_samples: 36
+  roll_samples: 4
+  ik_restarts: 48
+  ik_max_iterations: 250
+  local_seed_ratio: 0.5
+  local_seed_range: 0.8
+  ik_position_tolerance: 0.005
+  ik_orientation_tolerance: 0.50
+  dedup_tolerance: 0.002
+  random_seed: 20260728
+  left_tip: left_tool0
+  right_tip: right_tool0
+  debug_file: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/manual_20260803/move_ik_20260803.log"
+  output_file: "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/manual_20260803/move_goal_q_20260803.yaml"

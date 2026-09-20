@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot name="ur3_man" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- xacro:include filename="$(find ur5_description)/urdf/left_ur5e_joint_limited_robot.urdf.xacro" /-->
+  <xacro:include filename="$(find ur5_description)/urdf/right_ur3_joint_limited_robot.urdf.xacro"/>  
+  <!--xacro:include filename="$(find robotiq_ft_sensor)/urdf/left_robotiq_ft300.urdf.xacro" /-->   
+  <xacro:include filename="$(find robotiq_description)/urdf/robotiq_85_gripper_noplugin.urdf.xacro" />
+  <xacro:include filename="$(find robotiq_ft_sensor)/urdf/right_robotiq_ft300.urdf.xacro" />
+  
+  <link name="world" />
+
+ 
+  <joint name="right_world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "right_base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  
+  
+  
+  <xacro:right_robotiq_ft300 parent="right_tool0" prefix="right_">
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+  </xacro:right_robotiq_ft300>
+ 
+  
+  <!-- Attach the robotiq 85 gripper -->
+  <xacro:robotiq_85_gripper prefix="" parent="right_ft300_sensor" >
+    <origin xyz="0 0 0.004" rpy="0 ${pi/2} ${pi}"/>
+  </xacro:robotiq_85_gripper> 
+  
+  <!-- <joint name="left_banzi_joint" type="fixed">
+    <parent link="left_ft300_sensor" />
+    <child link = "left_cylinder" />
+    <origin xyz="0.0 0.00 0.0" rpy="0 0 1.517" />
+  </joint>
+  <joint name="right_banzi_joint" type="fixed">
+    <parent link="right_ft300_sensor" />
+    <child link = "right_cylinder" />
+    <origin xyz="0.0 0.00 0.0" rpy="0 0 1.517" />
+  </joint> -->
+  
+  
+   <gazebo>
+    <plugin name="gazebo_grasp_fix" filename="libgazebo_grasp_fix.so">
+      <arm>
+        <arm_name>right_hand</arm_name>
+        <palm_link>right_wrist_2_link</palm_link>
+        <gripper_link>right_wrist_3_link</gripper_link>
+      </arm>
+      <arm>
+        <arm_name>right_hand</arm_name>
+        <palm_link>right_wrist_2_link</palm_link>
+        <gripper_link>right_wrist_3_link</gripper_link>
+      </arm>
+        <forces_angle_tolerance>100</forces_angle_tolerance>
+        <update_rate>2</update_rate>
+        <grip_count_threshold>1</grip_count_threshold>
+        <max_grip_count>2</max_grip_count>
+        <release_tolerance>0.1</release_tolerance>
+        <disable_collisions_on_attach>true</disable_collisions_on_attach>
+        <contact_topic>__default_topic__</contact_topic>
+    </plugin>
+  </gazebo>
+  
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="ros_control">
+      <!--robotNamespace>/</robotNamespace>
+      <legacyModeNS>true</legacyModeNS-->
+      <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
+    </plugin>
+  </gazebo>
+  
+
+  <!-- <gazebo reference="obs_box">
+    <material>Gazebo/Green</material>
+    <mu1>100000</mu1>
+    <mu2>100000</mu2>
+  </gazebo> -->
+  <!-- <gazebo reference="other_box_1">
+    <static>true</static>
+    <material>Gazebo/Green</material>
+    <mu1>100000</mu1>
+    <mu2>100000</mu2>
+  </gazebo> -->
+  
+</robot>

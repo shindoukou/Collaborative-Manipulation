@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="obs_box">
+    <link name="obs_box">
+      <inertial>
+        <origin xyz="0 0 0"/>
+        <mass value="5"/>
+        <inertia ixx="0.00058" ixy="0.0" ixz="0.0" iyy="0.00058" iyz="0.0" izz="0.00019" />
+      </inertial>
+      <collision>
+        <geometry>
+           <box size="0.35 0.6 0.53"/>
+        </geometry>
+      </collision>
+      <visual>
+        <origin xyz="0 0 0"/>
+        <geometry>
+          <box size="0.35 0.6 0.53"/>
+        </geometry>
+      </visual>
+    </link>
+    <gazebo reference="obs_box">
+    <material>Gazebo/Green</material>
+  </gazebo>
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+ </robot>

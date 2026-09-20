@@ -1,0 +1,229 @@
+{
+  "Ts": 0.02,
+  "horizon": 5,
+  "source_dt": 0.01,
+  "sim_command_points": 2,
+  "sim_command_start_step": 2,
+  "reference_stride": {
+    "ball": {
+      "catch": 1,
+      "move": 1
+    },
+    "box": {
+      "catch": 1,
+      "move": 1
+    }
+  },
+  "weights": {
+    "Wd": 0.0,
+    "Wt": 9999.0,
+    "Wo": 200.0,
+    "Wu": 2.0,
+    "Wq": 750.0,
+    "Wv": 300.0,
+    "WF": 9999.0
+  },
+  "weight_error_scales": {
+    "Wd": 1.0,
+    "Wt": 1.0,
+    "Wo": 1.0,
+    "Wu": 1.0,
+    "Wq": 1.0,
+    "Wv": 1.0,
+    "WF": 1.0
+  },
+  "stage_weights": {
+    "default": {
+      "1": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.0
+      },
+      "2": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.01
+      },
+      "3": {
+        "Wd": 0.0,
+        "Wt": 9999.0,
+        "Wo": 200.0,
+        "Wu": 2.0,
+        "Wq": 750.0,
+        "Wv": 300.0,
+        "WF": 9999.0
+      },
+      "4": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.01
+      }
+    },
+    "ball": {
+      "3": {
+        "Wd": 0.0,
+        "Wt": 9999.0,
+        "Wo": 200.0,
+        "Wu": 2.0,
+        "Wq": 750.0,
+        "Wv": 300.0,
+        "WF": 9999.0
+      }
+    },
+    "box": {}
+  },
+  "stage_weight_error_scales": {
+    "default": {},
+    "ball": {
+      "3": {
+        "Wd": 1.0,
+        "Wt": 1.0,
+        "Wo": 1.0,
+        "Wu": 1.0,
+        "Wq": 1.0,
+        "Wv": 1.0,
+        "WF": 1.0
+      }
+    },
+    "box": {}
+  },
+  "joint_min": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_max": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "input_max_rad_s": [
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793
+  ],
+  "solver": {
+    "max_iter": 200,
+    "acceptable_tol": 1e-08,
+    "acceptable_obj_change_tol": 1e-06
+  },
+  "socket": {
+    "port": 55005,
+    "timeout_s": 0.018,
+    "stale_limit_s": 0.08,
+    "reconnect_s": 0.2
+  },
+  "force_projection": {
+    "minimum_separation_m": 1e-06,
+    "use_absolute": true,
+    "gravity_common_m_s2": [0.0, 0.0, -9.80665],
+    "left": {
+      "sensor_rpy_in_ee": [0.0, 0.0, 1.5707963267948966],
+      "tool_mass_kg": 0.0
+    },
+    "right": {
+      "sensor_rpy_in_ee": [0.0, 0.0, 1.5707963267948966],
+      "tool_mass_kg": 0.0
+    }
+  },
+  "paper_elastic": {
+    "ball": {
+      "catch": {
+        "k0": 500.0,
+        "wb": 10.0,
+        "wk": 10.0,
+        "b0": 0.0,
+        "desired_force_n": 16.0,
+        "object_length_m": 0.18,
+        "max_displacement_m": 0.02
+      },
+      "move": {
+        "k0": 500.0,
+        "wb": 200.0,
+        "wk": 10.0,
+        "b0": 0.0,
+        "desired_force_n": 16.0,
+        "object_length_m": 0.18,
+        "max_displacement_m": 0.02
+      }
+    },
+    "box": {
+      "catch": {
+        "k0": 1000.0,
+        "wb": 100.0,
+        "wk": 20.0,
+        "b0": 0.0,
+        "desired_force_n": 25.0,
+        "object_length_m": 0.19535,
+        "max_displacement_m": 0.001
+      },
+      "move": {
+        "k0": 1000.0,
+        "wb": 100.0,
+        "wk": 20.0,
+        "b0": 0.0,
+        "desired_force_n": 25.0,
+        "object_length_m": 0.193,
+        "max_displacement_m": 0.015
+      }
+    }
+  },
+  "stage2": {
+    "ball": {
+      "desired_force_n": 16.0,
+      "force_tolerance_n": 0.01,
+      "sim_stiffness_n_m": 625.0,
+      "endpoint_tolerance_m": 0.02,
+      "stable_cycles": 10,
+      "max_duration_s": 12.0
+    },
+    "box": {
+      "desired_force_n": 25.0,
+      "force_tolerance_n": 1.0,
+      "sim_stiffness_n_m": 892.0,
+      "endpoint_tolerance_m": 0.02,
+      "stable_cycles": 10,
+      "max_duration_s": 12.0
+    }
+  },
+  "stage4": {
+    "ball": {
+      "desired_force_n": 16.0,
+      "force_tolerance_n": 0.01,
+      "sim_stiffness_n_m": 625.0,
+      "terminal_inward_shift_m": 0.009,
+      "endpoint_tolerance_m": 0.01,
+      "stable_cycles": 10,
+      "max_duration_s": 12.0
+    },
+    "box": {
+      "desired_force_n": 25.0,
+      "force_tolerance_n": 1.0,
+      "sim_stiffness_n_m": 1666.6666666666667,
+      "endpoint_tolerance_m": 0.01,
+      "stable_cycles": 10,
+      "max_duration_s": 12.0
+    }
+  }
+}

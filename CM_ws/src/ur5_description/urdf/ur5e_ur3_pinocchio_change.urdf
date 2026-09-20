@@ -1,0 +1,703 @@
+<robot name="ur5e_ur3">
+    <material name="LightGrey">
+        <texture />
+        <color rgba="0.7 0.7 0.7 1" />
+    </material>
+    <material name="Robotiq-Black">
+        <texture />
+        <color rgba="0.2 0.2 0.2 1" />
+    </material>
+    <material name="Robotiq-Grey">
+        <texture />
+        <color rgba="0.4 0.4 0.4 1" />
+    </material>
+    <link name="left_base" />
+    <link name="left_base_link">
+        <inertial>
+            <mass value="4" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="0.00443333" ixy="0" ixz="0" iyy="0.00443333" iyz="0" izz="0.0072" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/base.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/base.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_forearm_link">
+        <inertial>
+            <mass value="2.275" />
+            <origin xyz="0 0 0.196" rpy="0 -0 0" />
+            <inertia ixx="0.0311796" ixy="0" ixz="0" iyy="0.0311796" iyz="0" izz="0.004095" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/forearm.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/forearm.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_ft300_mounting_plate">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/visual/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL" scale="1 1 1" />
+            </geometry>
+            <material name="Robotiq-Grey">
+                <texture />
+                <color rgba="0.4 0.4 0.4 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/collision/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_ft300_sensor">
+        <inertial>
+            <mass value="0.3" />
+            <origin xyz="0 0 -0.017" rpy="0 -0 0" />
+            <inertia ixx="0.000262" ixy="0" ixz="1e-06" iyy="0.000265" iyz="1e-06" izz="0.000219" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/visual/robotiq_ft300.STL" scale="1 1 1" />
+            </geometry>
+            <material name="Robotiq-Black">
+                <texture />
+                <color rgba="0.2 0.2 0.2 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/collision/robotiq_ft300.STL" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_shoulder_link">
+        <inertial>
+            <mass value="3.7" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="0.0102675" ixy="0" ixz="0" iyy="0.0102675" iyz="0" izz="0.00666" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/shoulder.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/shoulder.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_tool0" />
+    <link name="left_upper_arm_link">
+        <inertial>
+            <mass value="8.393" />
+            <origin xyz="0 0 0.2125" rpy="0 -0 0" />
+            <inertia ixx="0.133886" ixy="0" ixz="0" iyy="0.133886" iyz="0" izz="0.0151074" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/upperarm.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/upperarm.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_wrist_1_link">
+        <inertial>
+            <mass value="1.219" />
+            <origin xyz="0 0.127 0" rpy="0 -0 0" />
+            <inertia ixx="0.0025599" ixy="0" ixz="0" iyy="0.0025599" iyz="0" izz="0.0021942" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/wrist1.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/wrist1.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_wrist_2_link">
+        <inertial>
+            <mass value="1.219" />
+            <origin xyz="0 0 0.1" rpy="0 -0 0" />
+            <inertia ixx="0.0025599" ixy="0" ixz="0" iyy="0.0025599" iyz="0" izz="0.0021942" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/wrist2.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/wrist2.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="left_wrist_3_link">
+        <inertial>
+            <mass value="0.1879" />
+            <origin xyz="0 0.0771 0" rpy="1.5708 -0 0" />
+            <inertia ixx="9.89041e-05" ixy="0" ixz="0" iyy="9.89041e-05" iyz="0" izz="0.000132117" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/visual/wrist3.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur5-master/ur5_description/meshes/ur5e/collision/wrist3.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="obs_box">
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="3.375e-05" ixy="0" ixz="0" iyy="3.375e-05" iyz="0" izz="3.375e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.05 0.48 0.48" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.05 0.48 0.48" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="obs_box_platform">
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="3.375e-05" ixy="0" ixz="0" iyy="3.375e-05" iyz="0" izz="3.375e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.2 0.1 0.02" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.2 0.1 0.02" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="obs_box_son">
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="3.375e-05" ixy="0" ixz="0" iyy="3.375e-05" iyz="0" izz="3.375e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.05 0.06 0.2" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.05 0.06 0.2" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="other_box_1">
+        <inertial>
+            <mass value="0.1" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="3.375e-05" ixy="0" ixz="0" iyy="3.375e-05" iyz="0" izz="3.375e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.35 0.6 0.48" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <box size="0.35 0.6 0.48" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_base" />
+    <link name="right_base_link">
+        <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="0.00305317" ixy="0" ixz="0" iyy="0.00305317" iyz="0" izz="0.005625" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/base.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/base.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_forearm_link">
+        <inertial>
+            <mass value="1.26" />
+            <origin xyz="0 0 0.106625" rpy="0 -0 0" />
+            <inertia ixx="0.00654681" ixy="0" ixz="0" iyy="0.00654681" iyz="0" izz="0.00354375" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/forearm.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/forearm.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_ft300_mounting_plate">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/visual/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL" scale="1 1 1" />
+            </geometry>
+            <material name="Robotiq-Grey">
+                <texture />
+                <color rgba="0.4 0.4 0.4 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/collision/mountings/robotiq_ft300-G-062-COUPLING_G-50-4M6-1D6_20181119.STL" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_ft300_sensor">
+        <inertial>
+            <mass value="0.3" />
+            <origin xyz="0 0 -0.017" rpy="0 -0 0" />
+            <inertia ixx="0.000262" ixy="0" ixz="1e-06" iyy="0.000265" iyz="1e-06" izz="0.000219" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/visual/robotiq_ft300.STL" scale="1 1 1" />
+            </geometry>
+            <material name="Robotiq-Black">
+                <texture />
+                <color rgba="0.2 0.2 0.2 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_ft_sensor/meshes/collision/robotiq_ft300.STL" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_shoulder_link">
+        <inertial>
+            <mass value="2" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="0.00809316" ixy="0" ixz="0" iyy="0.00809316" iyz="0" izz="0.005625" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/shoulder.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/shoulder.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_tool0" />
+    <link name="right_upper_arm_link">
+        <inertial>
+            <mass value="3.42" />
+            <origin xyz="0 0 0.121825" rpy="0 -0 0" />
+            <inertia ixx="0.0217285" ixy="0" ixz="0" iyy="0.0217285" iyz="0" izz="0.00961875" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/upperarm.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/upperarm.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_wrist_1_link">
+        <inertial>
+            <mass value="0.8" />
+            <origin xyz="0 0.08505 0" rpy="0 -0 0" />
+            <inertia ixx="0.002085" ixy="0" ixz="0" iyy="0.002085" iyz="0" izz="0.00225" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/wrist1.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/wrist1.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_wrist_2_link">
+        <inertial>
+            <mass value="0.8" />
+            <origin xyz="0 0 0.08535" rpy="0 -0 0" />
+            <inertia ixx="0.002085" ixy="0" ixz="0" iyy="0.002085" iyz="0" izz="0.00225" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/wrist2.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/wrist2.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="right_wrist_3_link">
+        <inertial>
+            <mass value="0.35" />
+            <origin xyz="0 0.0619 0" rpy="1.5708 -0 0" />
+            <inertia ixx="0.000136267" ixy="0" ixz="0" iyy="0.000136267" iyz="0" izz="0.0001792" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/visual/wrist3.dae" scale="1 1 1" />
+            </geometry>
+            <material name="LightGrey">
+                <texture />
+                <color rgba="0.7 0.7 0.7 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/mas-2/catkin_gripper/src/ur3-master/ur3_description/meshes/ur3/collision/wrist3.stl" scale="1 1 1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="target_ball">
+        <inertial>
+            <mass value="0.2" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <inertia ixx="3.375e-05" ixy="0" ixz="0" iyy="3.375e-05" iyz="0" izz="3.375e-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <sphere radius="0.1" />
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <sphere radius="0.1" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="world" />
+    <joint name="left_base_link-base_fixed_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 -3.14159" />
+        <axis xyz="0 0 0" />
+        <parent link="left_base_link" />
+        <child link="left_base" />
+    </joint>
+    <joint name="left_elbow_joint" type="revolute">
+        <origin xyz="0 -0.131 0.425" rpy="0 -0 0" />
+        <axis xyz="0 1 0" />
+        <parent link="left_upper_arm_link" />
+        <child link="left_forearm_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="150" velocity="3.14" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_ft300_fix" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="left_tool0" />
+        <child link="left_ft300_mounting_plate" />
+    </joint>
+    <joint name="left_ft300_mounting_plate" type="fixed">
+        <origin xyz="0 0 0.0415" rpy="3.14159 1.22465e-16 3.14159" />
+        <axis xyz="0 0 0" />
+        <parent link="left_ft300_mounting_plate" />
+        <child link="left_ft300_sensor" />
+    </joint>
+    <joint name="left_shoulder_lift_joint" type="revolute">
+        <origin xyz="0 0.138 0" rpy="0 1.5708 -0" />
+        <axis xyz="0 1 0" />
+        <parent link="left_shoulder_link" />
+        <child link="left_upper_arm_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="150" velocity="3.14" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_shoulder_pan_joint" type="revolute">
+        <origin xyz="0 0 0.163" rpy="0 -0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="left_base_link" />
+        <child link="left_shoulder_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="150" velocity="3.14" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_world_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="left_base_link" />
+    </joint>
+    <joint name="left_wrist_1_joint" type="revolute">
+        <origin xyz="0 0 0.392" rpy="0 1.5708 -0" />
+        <axis xyz="0 1 0" />
+        <parent link="left_forearm_link" />
+        <child link="left_wrist_1_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="28" velocity="6.28" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_wrist_2_joint" type="revolute">
+        <origin xyz="0 0.127 0" rpy="0 -0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="left_wrist_1_link" />
+        <child link="left_wrist_2_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="28" velocity="6.28" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_wrist_3_joint" type="revolute">
+        <origin xyz="0 0 0.1" rpy="0 -0 0" />
+        <axis xyz="0 1 0" />
+        <parent link="left_wrist_2_link" />
+        <child link="left_wrist_3_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="28" velocity="6.28" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="left_wrist_3_link-tool0_fixed_joint" type="fixed">
+        <origin xyz="0 0.1 0" rpy="-1.5708 0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="left_wrist_3_link" />
+        <child link="left_tool0" />
+    </joint>
+    <joint name="obs_plat_world" type="fixed">
+        <origin xyz="0.43933 0.257467 0.472769" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="obs_box_platform" />
+    </joint>
+    <joint name="obs_son_world" type="fixed">
+        <origin xyz="0.33933 0.257467 0.377769" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="obs_box_son" />
+    </joint>
+    <joint name="obs_world" type="fixed">
+        <origin xyz="0.33933 0.047467 0.0376694" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="obs_box" />
+    </joint>
+    <joint name="other_box_1_world" type="fixed">
+        <origin xyz="0.543268 0.10939 -0.21" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="other_box_1" />
+    </joint>
+    <joint name="right_base_link-base_fixed_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 -3.14159" />
+        <axis xyz="0 0 0" />
+        <parent link="right_base_link" />
+        <child link="right_base" />
+    </joint>
+    <joint name="right_world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="right_base_link"/>
+    <origin rpy="0.0 0.00 3.1415926" xyz="0.0076 0.467655 -0.001366"/>
+  </joint>
+    <joint name="right_elbow_joint" type="revolute">
+        <origin xyz="0 -0.0925 0.24365" rpy="0 -0 0" />
+        <axis xyz="0 1 0" />
+        <parent link="right_upper_arm_link" />
+        <child link="right_forearm_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="150" velocity="3.15" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_ft300_fix" type="fixed">
+        <origin xyz="0 0 0" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="right_tool0" />
+        <child link="right_ft300_mounting_plate" />
+    </joint>
+    <joint name="right_ft300_mounting_plate" type="fixed">
+        <origin xyz="0 0 0.0415" rpy="3.14159 1.22465e-16 3.14159" />
+        <axis xyz="0 0 0" />
+        <parent link="right_ft300_mounting_plate" />
+        <child link="right_ft300_sensor" />
+    </joint>
+    <joint name="right_shoulder_lift_joint" type="revolute">
+        <origin xyz="0 0.1198 0" rpy="0 1.5708 -0" />
+        <axis xyz="0 1 0" />
+        <parent link="right_shoulder_link" />
+        <child link="right_upper_arm_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="330" velocity="2.16" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_shoulder_pan_joint" type="revolute">
+        <origin xyz="0 0 0.1519" rpy="0 -0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="right_base_link" />
+        <child link="right_shoulder_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="330" velocity="2.16" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_wrist_1_joint" type="revolute">
+        <origin xyz="0 0 0.21325" rpy="0 1.5708 -0" />
+        <axis xyz="0 1 0" />
+        <parent link="right_forearm_link" />
+        <child link="right_wrist_1_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="54" velocity="3.2" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_wrist_2_joint" type="revolute">
+        <origin xyz="0 0.08505 0" rpy="0 -0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="right_wrist_1_link" />
+        <child link="right_wrist_2_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="54" velocity="3.2" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_wrist_3_joint" type="revolute">
+        <origin xyz="0 0 0.08535" rpy="0 -0 0" />
+        <axis xyz="0 1 0" />
+        <parent link="right_wrist_2_link" />
+        <child link="right_wrist_3_link" />
+        <dynamics damping="0" friction="0" />
+        <limit effort="54" velocity="3.2" lower="-3.14159" upper="3.14159" />
+    </joint>
+    <joint name="right_wrist_3_link-tool0_fixed_joint" type="fixed">
+        <origin xyz="0 0.0819 0" rpy="-1.5708 0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="right_wrist_3_link" />
+        <child link="right_tool0" />
+    </joint>
+    <joint name="target_ball_world" type="floating">
+        <origin xyz="0 0 0" rpy="0 -0 0" />
+        <axis xyz="0 0 0" />
+        <parent link="world" />
+        <child link="target_ball" />
+    </joint>
+</robot>

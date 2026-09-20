@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot name="double_ur5" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find ur5_description)/urdf/left_ur5_joint_limited_robot.urdf.xacro" />
+  <xacro:include filename="$(find ur5_description)/urdf/right_ur5_joint_limited_robot.urdf.xacro" />  
+  <link name="world" />
+
+  <link name="elastic_ball">
+
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="2.0" />
+      <inertia  ixx="0.3375" ixy="0.0"  ixz="0.0"  iyy="0.3375"  iyz="0.0"  izz="0.3375" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <sphere radius ="0.06"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <sphere radius ="0.06"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "left_base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <joint name="right_world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "right_base_link" />
+    <origin xyz="0.0 0.5 0.0" rpy="0.0 0.0 3.1415" />
+  </joint>
+  
+  
+    <joint name="left_ball_joint" type="fixed">
+    <parent link="left_wrist_3_link" />
+    <child link = "elastic_ball" />
+    <origin xyz="0.0 0.00 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <!--joint name="right_ball_joint" type="revolute">
+    <parent link="right_wrist_3_link" />
+    <child link = "elastic_ball" />
+    <origin xyz="0.0 0.06 0.0" rpy="0.0 0.0 0" />
+  </joint-->
+  
+  
+  
+  
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="ros_control">
+      <!--robotNamespace>/</robotNamespace>
+      <legacyModeNS>true</legacyModeNS-->
+      <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
+    </plugin>
+  </gazebo>
+  
+  <gazebo reference="elastic_ball">
+    <material> Gazebo/WoodPallet</material>
+    <mu1>100000</mu1>
+    <mu2>100000</mu2>
+    <kp>10000</kp>
+    <kd>1</kd>
+  </gazebo>
+</robot>

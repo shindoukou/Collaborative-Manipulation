@@ -1,0 +1,47 @@
+{
+  "timestamp": "20260809_134102",
+  "status": "COMPLETE_VALIDATED",
+  "method": "MOVE_ONLY_TASK_MANIFOLD_PLUS10MM_LOCAL_DENSIFY",
+  "reference_move_run": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260808_231534_move_plus5mm_stage2fixed_PLANNING_ONLY",
+  "catch_replanned": false,
+  "catch_reused_byte_for_byte": true,
+  "catch_sha256": {
+    "left_source": "44078b589a004e6d76402cccf0f356781996058380c7fd9c3511bd0b78ac27be",
+    "left_copy": "44078b589a004e6d76402cccf0f356781996058380c7fd9c3511bd0b78ac27be",
+    "right_source": "b8a6a6af1785fa5162103f1d3a9473d8ff0225c157a87f237fa2ab1d48149724",
+    "right_copy": "b8a6a6af1785fa5162103f1d3a9473d8ff0225c157a87f237fa2ab1d48149724"
+  },
+  "stage2_terminal_changed": false,
+  "move_endpoint_center_changed": false,
+  "cost_weights_changed": false,
+  "nmpc_weights_changed": false,
+  "move_start_gap_from_stage2_rad": 0.0,
+  "requested_distance_increase_m": 0.01,
+  "ramp_fraction": 0.08,
+  "ramp_duration_s": 0.9008,
+  "move_points_before_local_densify": 1127,
+  "inserted_local_execution_samples": 131,
+  "max_execution_joint_step_rad": 0.006,
+  "move_points": 1258,
+  "move_duration_s": 12.57,
+  "old_distance_range_m": [
+    0.16655572305614136,
+    0.18266425284488083
+  ],
+  "new_distance_range_m": [
+    0.17621541539546456,
+    0.19200939874331202
+  ],
+  "increase_after_ramp_m": [
+    0.00915392949496302,
+    0.009881289009763788
+  ],
+  "max_center_route_change_m": 0.0012799696566500051,
+  "move_endpoint_center_error_m": 8.862901105043513e-13,
+  "max_height_profile_change_m": 0.0008766167606171216,
+  "old_max_center_z_m": 0.5913208547594251,
+  "new_max_center_z_m": 0.5913208548296958,
+  "max_relative_direction_change_deg": 0.6518611114329744,
+  "max_abs_joint_velocity_rad_s": 0.5988554263051865,
+  "native_collision_and_task_validation": "PASS"
+}

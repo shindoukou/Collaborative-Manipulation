@@ -1,0 +1,44 @@
+{
+  "schema": "CM_CANONICAL_BOX_TRAJECTORY_V1",
+  "created_local": "2026-08-26T21:23:43.501883+08:00",
+  "run_root": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/catch_single_knot_raised_table_20260826_211358/selected_controller",
+  "scene_height": {
+    "table_z_old_m": 0.2723345,
+    "table_z_new_m": 0.303875445,
+    "height_change_m": 0.031540945,
+    "box_center_z_new_m": 0.619375445,
+    "table_top_z_new_m": 0.568875445,
+    "box_bottom_z_new_m": 0.568875445,
+    "object_table_initial_overlap_m": 0.0
+  },
+  "catch": {
+    "planning_waypoint_count_per_arm": 4,
+    "piece_count": 3,
+    "samples_per_segment_including_endpoints": 3,
+    "interior_optimization_samples_per_segment": 1,
+    "source_dt_s": 0.01,
+    "reference_stride": 1,
+    "old_reference_sample_count": 2050,
+    "new_reference_sample_count": 439,
+    "old_effective_duration_s": 20.490000000000002,
+    "new_optimized_duration_s": 4.376130351822561,
+    "new_controller_effective_duration_s": 4.38,
+    "accepted_for_control": true,
+    "continuous_joint_constraints_valid": true,
+    "post_optimization_fcl_valid": true,
+    "post_optimization_fcl_invalid_samples": 0,
+    "collision_cost_in_objective": false,
+    "collision_gradient_used": false,
+    "spatial_step": 0.0001,
+    "largest_tested_valid_spatial_step": 0.0001,
+    "smallest_tested_invalid_spatial_step": 0.001,
+    "left_path_sha256": "76bd0bcac2314d90bec9655d9dca4bac098479943f035dd7a514b7cce8b0488d",
+    "right_path_sha256": "ed87cd81cbe3c058ca3680aba3328162e456b55112a3093642be73e741fd1c3c"
+  },
+  "move": {
+    "preserved_without_regeneration": true,
+    "source_controller_run": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/move_fcl_boundary_20260820_183911/deviation_0.000000000",
+    "left_path_sha256": "789500d1af925838ff307cba58592d7e5a33418ebcd714a6a6ffafafc9eb2c94",
+    "right_path_sha256": "9617eb08328b5c1d42630da48b5e7acdd3709159ed9123dfd25d6ec20c4a6cb9"
+  }
+}

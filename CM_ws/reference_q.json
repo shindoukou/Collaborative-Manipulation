@@ -1,0 +1,182 @@
+{
+  "ball": {
+    "catch": {
+      "left": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/catch_left_samples_20260805_202427.txt",
+        "points": 267,
+        "initial_q": [
+          -1.256637061,
+          -1.5707,
+          1.5707,
+          -1.5707,
+          0.0,
+          0.0
+        ],
+        "terminal_q": [
+          -0.14952746424086044,
+          -0.8601937890218891,
+          1.4574964780997117,
+          -0.7485759223395915,
+          -0.8702931380194026,
+          0.09794733136989815
+        ]
+      },
+      "right": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/catch_right_samples_20260805_202427.txt",
+        "points": 267,
+        "initial_q": [
+          1.256637061,
+          -1.5707,
+          -1.5707,
+          -1.5707,
+          0.0,
+          0.0
+        ],
+        "terminal_q": [
+          0.15403926208386745,
+          -2.238805777761693,
+          -1.6534462941790364,
+          -2.1763110728726547,
+          -0.5715692999642287,
+          -0.1813188026535095
+        ]
+      }
+    },
+    "move": {
+      "left": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_left_samples_20260805_202427.txt",
+        "points": 602,
+        "initial_q": [
+          -0.13444155227113155,
+          -0.8751145335423693,
+          1.4903166401562598,
+          -0.7684338937403327,
+          -0.8553817291998342,
+          0.10095908234621637
+        ],
+        "terminal_q": [
+          -0.20391323677717538,
+          -1.918177127062364,
+          1.5138655407287904,
+          -0.9136567980642156,
+          -0.5504842793174326,
+          -0.2943338595670404
+        ]
+      },
+      "right": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_right_samples_20260805_202427.txt",
+        "points": 602,
+        "initial_q": [
+          0.11835555577459606,
+          -2.2725821664513117,
+          -1.5754335636610293,
+          -2.2316335449420817,
+          -0.6064766383854006,
+          -0.16798787228282516
+        ],
+        "terminal_q": [
+          0.31126277315392037,
+          -2.8501977369298914,
+          1.151558470256131,
+          -2.4702070518671815,
+          -0.6332310210832386,
+          -0.643235662572657
+        ]
+      }
+    }
+  },
+  "box": {
+    "catch": {
+      "left": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208/catch_left_samples_20260807_165208.txt",
+        "points": 2050,
+        "initial_q": [
+          -1.256637061,
+          -1.5707,
+          1.5707,
+          -1.5707,
+          0.0,
+          0.0
+        ],
+        "terminal_q": [
+          -0.506506,
+          -0.957182,
+          1.63977,
+          -0.682592,
+          -0.506506,
+          0.35992
+        ]
+      },
+      "right": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208/catch_right_samples_20260807_165208.txt",
+        "points": 2050,
+        "initial_q": [
+          1.256637061,
+          -1.5707,
+          -1.5707,
+          -1.5707,
+          0.0,
+          0.0
+        ],
+        "terminal_q": [
+          0.000368777000258,
+          -3.14159265359,
+          0.211741292068,
+          -2.17735812143,
+          -9.48676900925e-20,
+          -0.0336969929796
+        ]
+      }
+    },
+    "move": {
+      "left": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed/move_left_samples_20260809_134102.txt",
+        "points": 1258,
+        "initial_q": [
+          -0.466014686826,
+          -0.971355019827,
+          1.665089346,
+          -0.69373861887,
+          -0.466014686826,
+          0.359920334613
+        ],
+        "terminal_q": [
+          -0.279068290144,
+          -1.61340528446,
+          1.32642668003,
+          0.204509033539,
+          -0.458376354562,
+          0.131358175023
+        ]
+      },
+      "right": {
+        "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed",
+        "source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed/move_right_samples_20260809_134102.txt",
+        "points": 1258,
+        "initial_q": [
+          0.000368777000258,
+          -3.14159265359,
+          0.211741292068,
+          -2.17735812143,
+          0.0,
+          -0.0336969929796
+        ],
+        "terminal_q": [
+          0.459309891253,
+          -2.44974240638,
+          0.424714595123,
+          -1.24691881235,
+          -0.283626903949,
+          0.0678025655323
+        ]
+      }
+    }
+  }
+}

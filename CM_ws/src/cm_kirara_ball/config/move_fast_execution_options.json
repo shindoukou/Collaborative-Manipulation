@@ -1,0 +1,22 @@
+{
+  "samples_per_segment": 5,
+  "initial_segment_duration": 1.0,
+  "minimum_segment_duration": 0.05,
+  "maximum_segment_duration": 6.5,
+  "spatial_step": 0.02,
+  "time_step": 0.02,
+  "epsilon_c": 0.0001,
+  "epsilon_t": 0.0001,
+  "maximum_knot_deviation": 0.05,
+  "weight_path": 1.0,
+  "weight_velocity": 1.0,
+  "weight_joint_limit": 100.0,
+  "weight_velocity_limit": 100.0,
+  "weight_task_position": 100.0,
+  "weight_task_orientation": 100.0,
+  "weight_task_position_grasp": 100.0,
+  "weight_task_orientation_grasp": 100.0,
+  "weight_task_position_transport": 100.0,
+  "weight_task_orientation_transport": 100.0,
+  "weight_time": 0.05
+}

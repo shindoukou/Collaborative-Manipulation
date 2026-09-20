@@ -6,6 +6,10 @@
   <img src="assets/paper/systemV7.png" alt="Overview of the proposed dual-arm manipulation framework" width="100%">
 </p>
 
+## Code snapshot
+
+The initial CM workspace snapshot is in [`CM_ws/`](CM_ws/). See the [workspace guide](CM_ws/README_CN.md) and [snapshot scope and validation notes](CM_ws/SNAPSHOT_20260920.md) before running it.
+
 ## Overview
 
 This work presents an integrated framework for dual-arm manipulation in narrow spaces. It combines rapid constrained trajectory generation, distributed nonlinear model predictive control (DNMPC), and bilateral position-force control with adaptive impedance. Simulation and real-world experiments cover grasping, transporting, placing, and pouring with rigid, soft, irregular, and deformable targets.

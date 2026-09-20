@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="ur5" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find ur5_description)/urdf/ur5.urdf.xacro" />
+  <xacro:ur5_robot prefix="" joint_limited="false"/>
+  <!-- <xacro:include filename="$(find robotiq_description)/urdf/robotiq_85_gripper.urdf.xacro" /> -->
+  <!-- <include file="/home/mas-2/catkin_gripper/src/robotiq-noetic-devel/robotiq_2f_85_gripper_gazebo/launch/inc/load_robotiq_2f_85_gripper.launch"/> -->
+  <xacro:include filename="/home/mas-2/0_qin_test_file/nanyou/UR5/src/robotiq/robotiq_2f_85_gripper_visualization/urdf/robotiq_arg2f_85_macro.xacro" />
+  <!-- <xacro:arg name="transmission_hw_interface" default="hardware_interface/EffortJointInterface"/> -->
+  <!-- <xacro:robotiq_85_gripper prefix="" parent="tool0" >
+    <origin xyz="0 0 0.004" rpy="0 ${-pi/2} ${pi}"/>
+  </xacro:robotiq_85_gripper>  -->
+  <xacro:robotiq_arg2f_85 prefix="" joint_limited="false"/>
+  <joint name="clipper" type="fixed">
+    <parent link="tool0"/>
+    <child link="robotiq_arg2f_base_link"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.00"/>
+  </joint>
+</robot>

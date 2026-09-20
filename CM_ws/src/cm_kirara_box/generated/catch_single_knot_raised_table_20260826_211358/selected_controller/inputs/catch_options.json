@@ -1,0 +1,20 @@
+{
+  "samples_per_segment": 3,
+  "interior_optimization_samples_per_segment": 1,
+  "initial_segment_duration": 1.4162234148293078,
+  "minimum_segment_duration": 1.3749741891546678,
+  "maximum_segment_duration": 1.458710117274187,
+  "maximum_knot_deviation": 0.05,
+  "spatial_step": 1e-4,
+  "weight_path": 1.0,
+  "weight_velocity": 1.0,
+  "weight_joint_limit": 100.0,
+  "weight_velocity_limit": 100.0,
+  "weight_task_position": 100.0,
+  "weight_task_orientation": 100.0,
+  "weight_task_position_grasp": 100.0,
+  "weight_task_orientation_grasp": 100.0,
+  "weight_task_position_transport": 100.0,
+  "weight_task_orientation_transport": 100.0,
+  "weight_time": 0.05
+}

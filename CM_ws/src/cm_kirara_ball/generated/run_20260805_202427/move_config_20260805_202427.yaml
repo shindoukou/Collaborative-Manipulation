@@ -1,0 +1,111 @@
+ball_collision:
+  x: 0.4
+  y: 0.15
+  z: 0.62
+  r: 0.03
+arm:
+  r: 0.03
+cost:
+  eff: 0.165
+  rot: 3
+  cos: 0.9
+  cos_2: 0.9
+  object: 0.005
+ompl:
+  plantime: 300
+palnning:
+  lowbound: 0.16
+  upperbound: 0.18
+file_path:
+  pinocchio_file: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/models/urdf/move_newbase.urdf
+model_path:
+  pinocchio_path: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/models
+kirara_path:
+  left: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_left_coeff_20260805_202427.txt
+  right: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_right_coeff_20260805_202427.txt
+planned_path:
+  left: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_left_planned_path_20260805_202427.txt
+  right: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_right_planned_path_20260805_202427.txt
+Joint_init:
+  joint_1: -0.13444155227113155
+  joint_2: -0.8751145335423693
+  joint_3: 1.4903166401562598
+  joint_4: -0.7684338937403327
+  joint_5: -0.8553817291998342
+  joint_6: 0.10095908234621637
+  joint_7: 0.11835555577459606
+  joint_8: -2.2725821664513117
+  joint_9: -1.5754335636610293
+  joint_10: -2.2316335449420817
+  joint_11: -0.6064766383854006
+  joint_12: -0.16798787228282516
+Joint_final:
+  joint_1: -0.0678256
+  joint_2: -1.51341
+  joint_3: 1.02452
+  joint_4: -0.677657
+  joint_5: -0.818992
+  joint_6: 0.0
+  joint_7: 0.133511
+  joint_8: -1.80848
+  joint_9: -1.00246
+  joint_10: -2.0965
+  joint_11: -0.756731
+  joint_12: 0.0
+goal_generator:
+  enabled: true
+  fallback_to_joint_final: false
+  target_from_reference: false
+  preserve_left_reference: false
+  preserve_right_world_pose: true
+  right_base_translation_delta:
+    x: -0.0076
+    y: -0.030655
+    z: 0.001366
+  target_offset:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  allow_reference_collisions: false
+  stop_at_first_valid: false
+  mode: MOVE
+  joint_score_weight: 1.0
+  pose_score_weight: 20.0
+  joint_score_weights:
+  - 1
+  - 1
+  - 1
+  - 5
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+  - 50
+  - 50
+  - 50
+  max_right_wrist_excursion_rad: 1.0
+  target:
+    x: 0.34299429
+    y: 0.257872
+    z: 0.58009389
+  distance_min: 0.24
+  distance_max: 0.26
+  theta_left: 0.3
+  theta_right: 0.35
+  psi_left: 0.25
+  psi_right: 0.21
+  axis_samples: 36
+  roll_samples: 4
+  ik_restarts: 48
+  ik_max_iterations: 250
+  local_seed_ratio: 0.5
+  local_seed_range: 0.8
+  ik_position_tolerance: 0.005
+  ik_orientation_tolerance: 0.5
+  dedup_tolerance: 0.002
+  random_seed: 20260728
+  left_tip: left_tool0
+  right_tip: right_tool0
+  debug_file: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_ik_20260805_202427.log
+  output_file: /home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427/move_goal_q_20260805_202427.yaml

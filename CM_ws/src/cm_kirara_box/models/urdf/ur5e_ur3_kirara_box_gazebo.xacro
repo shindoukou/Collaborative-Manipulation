@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<robot name="ur5e_ur3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find ur5_description)/urdf/left_ur5e_joint_limited_robot.urdf.xacro" />
+  <xacro:include filename="$(find ur5_description)/urdf/right_ur3_joint_limited_robot.urdf.xacro"/>  
+  <xacro:include filename="$(find robotiq_ft_sensor)/urdf/left_robotiq_ft300.urdf.xacro" />   
+  <xacro:include filename="$(find robotiq_ft_sensor)/urdf/right_robotiq_ft300.urdf.xacro" /> 
+  
+  <link name="world" />
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+  <link name="obs_box">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 0.48 0.190476114"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 0.48 0.190476114"/>
+      </geometry>
+    </collision>
+   </link>
+   <joint name="obs_world" type="fixed">
+    
+    <!-- Shift the connected obstacle assembly 20 mm toward -Y. -->
+    <origin rpy="0 0 0" xyz="0.34236639 0.014242173 0.166113502"/>
+    
+    
+    <parent link="world"/>
+    <child link="obs_box"/>
+  </joint>
+  
+  <link name="obs_box_son">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 0.06 0.20"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 0.06 0.20"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="obs_son_parent" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0.21 0.195238057"/>
+    
+    
+    <parent link="obs_box"/>
+    <child link="obs_box_son"/>
+  </joint>
+  
+  <link name="obs_box_platform">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.14 0.085 0.015"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.14 0.085 0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="obs_plat_son" type="fixed">
+    <origin rpy="0 0 0" xyz="0.045 0.0125 0.0925"/>
+    
+    <parent link="obs_box_son"/>
+    <child link="obs_box_platform"/>
+  </joint>
+
+
+   
+  <link name="obs_box_left">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.76 0.136 0.6"/>
+      </geometry>
+    </visual>
+
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.76 0.136 0.6"/>
+      </geometry>
+    </collision>
+
+
+   </link>
+   <joint name="obs_left_world" type="fixed">
+    <origin rpy="0 0 0" xyz="0.69736639 -0.397757827 0.041351559"/>
+    <parent link="world"/>
+    <child link="obs_box_left"/>
+  </joint>
+
+   
+  <link name="obs_box_right">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.76 0.22 0.6"/>
+      </geometry>
+    </visual>
+
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.76 0.22 0.6"/>
+      </geometry>
+    </collision>
+
+   </link>
+   <joint name="obs_right_world" type="fixed">
+    <origin rpy="0 0 0" xyz="0.69736639 0.774242173 0.001351559"/>
+    <parent link="world"/>
+    <child link="obs_box_right"/>
+  </joint>
+
+   
+  <link name="obs_box_middle">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 1.35 0.6"/>
+      </geometry>
+    </visual>
+
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.05 1.35 0.6"/>
+      </geometry>
+    </collision>
+
+   </link>
+   <joint name="obs_middle_world" type="fixed">
+    <origin rpy="0 0 0" xyz="1.18236639 0.209242173 0.001351559"/>
+    <parent link="world"/>
+    <child link="obs_box_middle"/>
+  </joint>
+     
+  <link name="obs_box_middle_in">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.1" />
+      <inertia  ixx="0.00003375" ixy="0.0"  ixz="0.0"  iyy="0.00003375"  iyz="0.0"  izz="0.00003375" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.135 0.994 0.6"/>
+      </geometry>
+    </visual>
+
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size ="0.135 0.994 0.6"/>
+      </geometry>
+    </collision>
+
+   </link>
+   <joint name="obs_middle_in_world" type="fixed">
+    <origin rpy="0 0 0" xyz="1.00986639 0.167242173 0.001351559"/>
+    <parent link="world"/>
+    <child link="obs_box_middle_in"/>
+  </joint>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <joint name="left_world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "left_base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+  <joint name="right_world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "right_base_link" />
+    
+    <origin xyz="0.0 0.437 0.0" rpy="0.0 0.00 3.1415926" />
+  </joint>
+  
+  
+  
+  <xacro:left_robotiq_ft300 parent="left_tool0" prefix="left_">
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+  </xacro:left_robotiq_ft300>
+ 
+  <xacro:right_robotiq_ft300 parent="right_tool0" prefix="right_">
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
+  </xacro:right_robotiq_ft300>
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+   <gazebo>
+    <plugin name="gazebo_grasp_fix" filename="libgazebo_grasp_fix.so">
+      <arm>
+        <arm_name>left_hand</arm_name>
+        <palm_link>left_wrist_2_link</palm_link>
+        <gripper_link>left_wrist_3_link</gripper_link>
+      </arm>
+      <arm>
+        <arm_name>right_hand</arm_name>
+        <palm_link>right_wrist_2_link</palm_link>
+        <gripper_link>right_wrist_3_link</gripper_link>
+      </arm>
+        <forces_angle_tolerance>100</forces_angle_tolerance>
+        <update_rate>100</update_rate>
+        <grip_count_threshold>0</grip_count_threshold>
+        <max_grip_count>4</max_grip_count>
+        <release_tolerance>0.1</release_tolerance>
+        <disable_collisions_on_attach>true</disable_collisions_on_attach>
+        <contact_topic>__default_topic__</contact_topic>
+    </plugin>
+  </gazebo>
+  
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="ros_control">
+      
+
+      
+    </plugin>
+  </gazebo>
+  
+
+  
+
+
+
+
+  
+
+
+
+
+
+  
+</robot>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot name="cm_kirara_box_object_220mm">
+  <link name="box_">
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.000488341667" ixy="0.0" ixz="0.0"
+               iyy="0.000325841667" iyz="0.0" izz="0.000644166667"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry><box size="0.17 0.220 0.101"/></geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry><box size="0.17 0.220 0.101"/></geometry>
+    </collision>
+  </link>
+  <gazebo reference="box_">
+    <material>Gazebo/Red</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>10000</kp>
+    <kd>50</kd>
+    <maxVel>0.05</maxVel>
+    <minDepth>0.0001</minDepth>
+  </gazebo>
+  <gazebo><static>false</static></gazebo>
+</robot>

@@ -1,0 +1,72 @@
+{
+  "schema": "CM_CANONICAL_BALL_TRAJECTORY_V2",
+  "created_local": "2026-08-26T01:07:07+08:00",
+  "run_root": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/move_canonical_single_insert_20260826_010707",
+  "intended_consumers": [
+    "ball_demo",
+    "future_dnmpc_parameter_sweeps"
+  ],
+  "existing_dnmpc_sweeps_must_be_rerun_for_same_reference_claim": true,
+  "planning": {
+    "replanned_for_this_run": false,
+    "paired_waypoint_count": 8,
+    "left_sha256": "75379bc6c845a64cce153e0bec4f994e8fd463f2e25a57c431974b0afacc1a6f",
+    "right_sha256": "c7f3767c8769563136a0d7535d9eec1d4f762c44ca8bab411222ef92209ade3f"
+  },
+  "trajectory_optimization": {
+    "architecture": "two_process_distributed_cubic_trajectory_optimization",
+    "samples_per_segment_including_endpoints": 3,
+    "interior_optimization_samples_per_segment": 1,
+    "weight_time": 1.0,
+    "collision_cost_in_objective": false,
+    "collision_gradient_used": false,
+    "options_sha256": "7541f88977a2de94e443a878d135155a8e109fa5ba484a86554c9d72a1187b3f"
+  },
+  "execution": {
+    "source_dt_s": 0.01,
+    "reference_stride": 1,
+    "duration_s": 9.075761627513879,
+    "sample_count": 909,
+    "left_path_sha256": "6b6e6cb6d13467dc228893ea4faf9473265eec683ae92e7c568785550da7b547",
+    "right_path_sha256": "7959a2b75a453de4d5bcad3770283fe216e023b0eb67b921219a86a289fae950",
+    "sample_times_sha256": "c5456155e6dae11c2e4416b931b2e7bfe72635f558f554261a16c91222fbd039"
+  },
+  "continuous_kinematics": {
+    "valid": true,
+    "continuous_polynomial_check": true,
+    "maximum_joint_position_violation_rad": 0.0,
+    "maximum_joint_velocity_violation_rad_s": 0.0,
+    "left_max_velocity_rad_s": [
+      0.3987255660695471,
+      0.4750370602683462,
+      0.574074140932416,
+      0.4816949087931652,
+      0.39102020104109014,
+      0.7627254180771305
+    ],
+    "right_max_velocity_rad_s": [
+      0.43448404502799903,
+      0.2742513461735248,
+      0.7922782334635662,
+      0.8868480314002366,
+      0.3083278333156764,
+      0.9180681454794964
+    ]
+  },
+  "post_fcl_acceptance_gate": {
+    "accepted_for_control": true,
+    "output_policy": "direct_gradient_descent_result_with_post_fcl_acceptance_gate",
+    "valid": true,
+    "validator": "CM_SOCKET_BALL_VALIDATOR",
+    "validator_config_sha256": "9803cfcd095f89a08bfc8a85e9863085b3518cf9c40dfe6d200048e51bfa60f9",
+    "maximum_joint_step_rad": 0.005,
+    "sample_count": 2392,
+    "invalid_sample_count": 0,
+    "used_as_cost_or_gradient": false
+  },
+  "catch_reference": {
+    "source_run": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/move_fcl_boundary_20260820_102820/deviation_0.000000000",
+    "left_path_sha256": "344a0bbd5f542c602234913dfa056fa34073a87c9afb4271baf3c2222e2b5140",
+    "right_path_sha256": "87960cd2505dfee92bc70b6ec917d500097ab735c4462d0202b75e8f2f89f33b"
+  }
+}
