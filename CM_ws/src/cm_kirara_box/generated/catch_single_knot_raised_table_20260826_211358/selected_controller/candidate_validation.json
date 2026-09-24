@@ -1,0 +1,45 @@
+{
+  "maximum_knot_deviation_rad": 0.0,
+  "spatial_step": 0.0,
+  "duration_s": 9.21681533230107,
+  "sample_count": 923,
+  "paper_penalty_costs": {
+    "left": {
+      "joint_position": 0.0,
+      "joint_velocity": 0.0,
+      "task_position": 0.0,
+      "task_orientation": 0.0
+    },
+    "right": {
+      "joint_position": 1.1459907892035383e-11,
+      "joint_velocity": 0.0,
+      "task_position": 0.0,
+      "task_orientation": 0.0
+    }
+  },
+  "paper_constraint_costs_recorded": true,
+  "joint_constraints_valid": true,
+  "task_constraints_are_paper_penalties_not_fcl_acceptance_rules": true,
+  "fcl_validation": {
+    "valid": true,
+    "sample_count": 923,
+    "invalid_sample_count": 0,
+    "reason_counts": {},
+    "first_invalid_samples": [],
+    "ready": "READY move-fcl 19 300"
+  },
+  "native_box_constraints": {
+    "valid": true,
+    "config": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed/move_config.yaml",
+    "validator_tail": [
+      "pair name: right_wrist_2_link_0 && right_wrist_3_link_0",
+      "please record k = 293",
+      "Initial collision check completed.",
+      "TCST kirara_box MOVE hard DH endpoint distance=[0.158, 0.192509] m; physical box length=0.22 m; max wrist change=1.2 rad; relative-line: dy>=0.15 m, transverse<=0.035 m, |dz|<=0.016 m, y_cos>=0.98; config=/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260809_134102_move_plus10mm_stage2fixed/move_config.yaml",
+      "TCST kirara_box MOVE samples valid: count=923"
+    ]
+  },
+  "accepted": true,
+  "output": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/move_fcl_boundary_20260820_183911/deviation_0.000000000",
+  "collision_repair_or_projection_used": false
+}

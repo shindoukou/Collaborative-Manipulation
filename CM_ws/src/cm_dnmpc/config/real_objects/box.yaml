@@ -1,0 +1,34 @@
+schema_version: 1
+object:
+  id: box
+  display_name: box
+  tcst_source: 0805box/scripts/all_sim_or_real_0805box.py
+status: {physical_parameters_migrated: true, hardware_validated: false, weight_status: tcst_role_mapped_seed_not_retuned_in_cm}
+controller:
+  control_period_s: 0.02
+  horizon: 5
+  command_semantics: {position: q_plus_u_dt, velocity: dnmpc_u0}
+reference:
+  source_dt_s: 0.01
+  stride: {catch: 4, move: 4}
+  package: null
+  paths:
+    catch: {left: null, right: null}
+    move: {left: null, right: null}
+real_io: {joint_state_topic: /joint_states, command_topic: "/{side}/scaled_pos_joint_traj_controller/command", force_topic: "/{side}_ft300/robotiq_ft_sensor", force_type: robotiq}
+paper_elastic:
+  catch: {k0: 1000.0, wb: 100.0, wk: 20.0, b0: 0.0, desired_force_n: 25.0, object_length_m: 0.191, max_displacement_m: 0.001}
+  move: {k0: 1000.0, wb: 1.0, wk: 20.0, b0: 0.0, desired_force_n: 25.0, object_length_m: 0.193, max_displacement_m: 0.015}
+stage_transition:
+  "2": {desired_force_n: 25.0, force_tolerance_n: 4.0, sim_stiffness_n_m: 10000.0, endpoint_tolerance_m: 0.02, stable_cycles: 10, max_duration_s: 12.0}
+  "4": {desired_force_n: 25.0, force_tolerance_n: 4.0, sim_stiffness_n_m: 10000.0, endpoint_tolerance_m: 0.01, stable_cycles: 10, max_duration_s: 12.0}
+stage_weights:
+  "1": {Wd: 50.0, Wt: 0.0, Wo: 0.0, Wu: 0.01, Wq: 100.0, Wv: 0.2, WF: 0.0}
+  "2": {Wd: 50.0, Wt: 0.3, Wo: 0.0, Wu: 0.01, Wq: 0.0, Wv: 0.2, WF: 0.01}
+  "3": {Wd: 50.0, Wt: 2.0, Wo: 0.0, Wu: 0.01, Wq: 900.0, Wv: 0.2, WF: 0.01}
+  "4": {Wd: 50.0, Wt: 0.2, Wo: 0.0, Wu: 0.01, Wq: 0.0, Wv: 0.2, WF: 0.01}
+legacy_tcst:
+  force_n: {catch: 25.0, move: 25.0}
+  real_stiffness_n_m: {catch: 10000.0, move: 10000.0}
+  damping: {catch: 100.0, move: 1.0}
+  weight_mapping_note: Q-position to Wt, Q-orientation to Wo, G-joint to Wq; Wd/Wv/WF remain CM terms.

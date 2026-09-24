@@ -1,0 +1,17 @@
+<launch>
+  <arg name="paused" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="box_z" default="0.624375445"/>
+  <arg name="box_y" default="0.0999192"/>
+  <arg name="table_z" default="0.308875445"/>
+  <arg name="grasp_plugin_lib_dir"
+       default="$(env HOME)/catkin_gripper/devel/lib"/>
+  <include file="$(find cm_kirara_box)/launch/ur5e_ur3_ft300_kirara_box.launch">
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="box_z" value="$(arg box_z)"/>
+    <arg name="box_y" value="$(arg box_y)"/>
+    <arg name="table_z" value="$(arg table_z)"/>
+    <arg name="grasp_plugin_lib_dir" value="$(arg grasp_plugin_lib_dir)"/>
+  </include>
+</launch>

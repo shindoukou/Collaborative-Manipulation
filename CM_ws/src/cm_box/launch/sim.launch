@@ -1,0 +1,30 @@
+<launch>
+  <arg name="paused" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="command_enabled" default="true"/>
+  <arg name="box_z" default="0.624375445"/>
+  <arg name="box_y" default="0.0999192"/>
+  <arg name="table_z" default="0.308875445"/>
+  <arg name="grasp_plugin_lib_dir"
+       default="$(env HOME)/catkin_gripper/devel/lib"/>
+
+  <include file="$(find cm_box)/launch/world.launch">
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="box_z" value="$(arg box_z)"/>
+    <arg name="box_y" value="$(arg box_y)"/>
+    <arg name="table_z" value="$(arg table_z)"/>
+    <arg name="grasp_plugin_lib_dir" value="$(arg grasp_plugin_lib_dir)"/>
+  </include>
+
+  <node pkg="cm_box" type="sim_left.py" name="cm_box_sim_left"
+        output="screen"
+        args="--receive-port 55005 --send-port 55006 --joint-timeout 120">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+  </node>
+  <node pkg="cm_box" type="sim_right.py" name="cm_box_sim_right"
+        output="screen"
+        args="--receive-port 55006 --send-port 55005 --joint-timeout 120">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+  </node>
+</launch>

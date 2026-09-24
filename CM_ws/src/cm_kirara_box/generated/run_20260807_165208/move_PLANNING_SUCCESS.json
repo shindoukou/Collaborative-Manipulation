@@ -1,0 +1,8 @@
+{
+  "phase": "move",
+  "status": "BidirectionalConnectPlanner_success_preserved_pending_KIRARA",
+  "raw_paths": {
+    "left": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208/move_planned_left_20260807_165208.txt",
+    "right": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_box/generated/run_20260807_165208/move_planned_right_20260807_165208.txt"
+  }
+}

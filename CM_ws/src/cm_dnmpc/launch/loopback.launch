@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="object" default="ball"/>
+  <arg name="runtime" default="sim"/>
+  <arg name="phase" default="move"/>
+  <arg name="port" default="55005"/>
+  <arg name="command_enabled" default="false"/>
+  <include file="$(find cm_dnmpc)/launch/left.launch">
+    <arg name="object" value="$(arg object)"/>
+    <arg name="runtime" value="$(arg runtime)"/>
+    <arg name="phase" value="$(arg phase)"/>
+    <arg name="peer_host" value="127.0.0.1"/>
+    <arg name="port" value="$(arg port)"/>
+    <arg name="command_enabled" value="$(arg command_enabled)"/>
+  </include>
+  <include file="$(find cm_dnmpc)/launch/right.launch">
+    <arg name="object" value="$(arg object)"/>
+    <arg name="runtime" value="$(arg runtime)"/>
+    <arg name="phase" value="$(arg phase)"/>
+    <arg name="peer_host" value="127.0.0.1"/>
+    <arg name="port" value="$(arg port)"/>
+    <arg name="command_enabled" value="$(arg command_enabled)"/>
+  </include>
+</launch>

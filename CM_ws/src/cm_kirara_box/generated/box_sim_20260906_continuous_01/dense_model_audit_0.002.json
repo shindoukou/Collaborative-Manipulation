@@ -1,0 +1,64 @@
+{
+  "samples": 3145,
+  "maximum_joint_step_rad": 0.002,
+  "duration_s": 8.448521485344122,
+  "physical_model_urdf": "/home/mas-2/3rd_party/CM_experiments/box_sim_params_20260905/mapping_fix_01/grip_guides01/physical_scene.urdf",
+  "planning_model_urdf": "/home/mas-2/3rd_party/CM_experiments/box_sim_params_20260905/mapping_fix_01/grip_yaw04/move_scene.urdf",
+  "max_tilt_deg": 0.4448451172402635,
+  "final_tilt_deg": 0.44213548139245157,
+  "box_start_end_m": [
+    [
+      0.5339697179909908,
+      0.12609645857356183,
+      0.12081591856041196
+    ],
+    [
+      0.33854394544084343,
+      0.2707128600687938,
+      0.5468075145954367
+    ]
+  ],
+  "geometry": {
+    "arm": {
+      "minimum_m": 0.006506864189395202,
+      "collision_samples": 0,
+      "pair": [
+        "obs_box_right_0",
+        "right_forearm_link_0"
+      ],
+      "index": 2029,
+      "time_s": 5.188021080815817
+    },
+    "box": {
+      "minimum_m": 0.024449270828542622,
+      "collision_samples": 0,
+      "pair": [
+        "obs_box_platform_0",
+        "target_box_0"
+      ],
+      "index": 2223,
+      "time_s": 5.727931811953629
+    }
+  },
+  "calibration": {
+    "anchor_frame": "left_wrist_2_link",
+    "translation_m": [
+      0.009705322117164128,
+      0.24955004034473297,
+      0.14243538975046333
+    ],
+    "quaternion_xyzw": [
+      0.0006004982977781131,
+      0.9999923658110721,
+      -0.0026087293643314454,
+      -0.0028464455858051335
+    ],
+    "calibration_id": "probe15_lower_table_stage2_tail",
+    "scene": {
+      "table_z_m": 0.308875445,
+      "box_z_m": 0.624375445,
+      "box_y_m": 0.0999192
+    }
+  },
+  "not_closed_loop_verification": true
+}

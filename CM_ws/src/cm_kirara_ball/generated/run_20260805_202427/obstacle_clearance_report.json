@@ -1,0 +1,78 @@
+{
+  "run_dir": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/run_20260805_202427",
+  "closed_table_geometry": {
+    "gazebo_center_world_m": [
+      0.62986639,
+      0.167242173,
+      0.2723345
+    ],
+    "gazebo_size_m": [
+      0.625,
+      0.994,
+      0.53
+    ],
+    "planning_center_robot_world_m": [
+      0.62986639,
+      0.167242173,
+      -0.2276655
+    ],
+    "planning_size_with_5mm_shell_m": [
+      0.635,
+      1.004,
+      0.54
+    ],
+    "joined_inner_bounds_xy_m": {
+      "x": [
+        0.31736639,
+        0.94236639
+      ],
+      "y": [
+        -0.329757827,
+        0.664242173
+      ]
+    }
+  },
+  "trimmed_main_obs_box": {
+    "gazebo_center_robot_world_m": [
+      0.34236639,
+      0.034242173,
+      0.1503430295
+    ],
+    "gazebo_size_m": [
+      0.05,
+      0.48,
+      0.222017059
+    ],
+    "gap_above_table_m": 0.002,
+    "top_height_unchanged": true,
+    "planning_size_with_5mm_shell_m": [
+      0.06,
+      0.49,
+      0.232017059
+    ]
+  },
+  "catch": {
+    "phase": "catch",
+    "sample_count": 267,
+    "minimum_clearance_m": 0.00021778188172718539,
+    "minimum_pair": [
+      "obs_box_0",
+      "right_ft300_sensor_0"
+    ],
+    "minimum_sample": 266,
+    "collision_results_at_or_below_zero": 0,
+    "valid": true
+  },
+  "move": {
+    "phase": "move",
+    "sample_count": 602,
+    "minimum_clearance_m": 6.750309272440802e-06,
+    "minimum_pair": [
+      "obs_box_platform_0",
+      "target_ball_0"
+    ],
+    "minimum_sample": 244,
+    "collision_results_at_or_below_zero": 0,
+    "valid": true
+  }
+}

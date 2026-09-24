@@ -1,0 +1,19 @@
+<launch>
+  <arg name="object" default="ball"/>
+  <arg name="side" default="left"/>
+  <arg name="phase" default="all"/>
+  <arg name="peer_host"/>
+  <arg name="bind_host" default="0.0.0.0"/>
+  <arg name="catch_reference"/>
+  <arg name="move_reference"/>
+  <arg name="command_enabled" default="false"/>
+
+  <node pkg="cm_dnmpc" type="cm_real_object_node.py"
+        name="cm_real_object_controller" output="screen"
+        args="--side $(arg side) --object $(arg object) --phase $(arg phase)
+              --peer-host $(arg peer_host) --bind-host $(arg bind_host)
+              --catch-reference $(arg catch_reference)
+              --move-reference $(arg move_reference)">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+  </node>
+</launch>

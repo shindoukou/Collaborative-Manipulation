@@ -1,0 +1,37 @@
+build/
+devel/
+logs/
+src/cm_kirara_ball/generated/socket_custom_*/
+src/cm_kirara_ball/generated/socket_run_*/
+src/cm_kirara_ball/generated/socket_latest/
+.idea/
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+*~
+
+# Publication snapshot: keep generated experiments and local state out of Git.
+install/
+.vscode/
+.pytest_cache/
+*.log
+*.bak*
+*.before_*
+*.pre_*
+*.orig
+*.old
+**/*backup*/
+legacy_not_installed_*/
+src/*/generated/
+.env
+.env.*
+!.env.example
+id_rsa*
+id_ed25519*
+*.pem
+*.p12
+*.pfx
+
+# The selected default references are explicitly tracked in this snapshot.
+# Ignored generated directories do not prevent changes to tracked files.

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="right_ft300">
+    <node name="ft_sensor" pkg="robotiq_ft_sensor" type="rq_sensor"  >
+    <param name="frame_id" type="str" value="ur3" />
+    <param name="serial_id" type="str" value="ttyUSB0" />
+    </node>
+  </group>
+  <group ns="left_ft300">
+    <node name="ft_sensor" pkg="robotiq_ft_sensor" type="rq_sensor"  >
+    <param name="frame_id" type="str" value="ur5e" />
+    <param name="serial_id" type="str" value="ttyUSB1" />
+    </node>
+  </group>
+  
+</launch>
+
+

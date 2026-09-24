@@ -1,0 +1,167 @@
+{
+  "schema": "CM_CANONICAL_BALL_TRAJECTORY_V4",
+  "created_local": "2026-08-26T17:58:03.870167+08:00",
+  "run_root": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_grasp_single_knot_strict_repro_20260826_195000/selected_x1_controller",
+  "intended_consumers": [
+    "ball_demo",
+    "future_dnmpc_parameter_sweeps"
+  ],
+  "existing_dnmpc_sweeps_must_be_rerun_for_same_reference_claim": true,
+  "planning": {
+    "replanned_for_this_run": false,
+    "paired_waypoint_count": 8,
+    "left_sha256": "75379bc6c845a64cce153e0bec4f994e8fd463f2e25a57c431974b0afacc1a6f",
+    "right_sha256": "c7f3767c8769563136a0d7535d9eec1d4f762c44ca8bab411222ef92209ade3f"
+  },
+  "trajectory_optimization": {
+    "architecture": "two_process_distributed_cubic_trajectory_optimization",
+    "samples_per_segment_including_endpoints": 3,
+    "interior_optimization_samples_per_segment": 1,
+    "weight_time": 4.0,
+    "collision_cost_in_objective": false,
+    "collision_gradient_used": false,
+    "options_sha256": "834ba58aba706ac04d5f908b80eac9777881a8f4ed40eee60acb953ef8980ff4",
+    "weights": {
+      "weight_path": 1.0,
+      "weight_velocity": 4.0,
+      "weight_joint_limit": 100.0,
+      "weight_velocity_limit": 100.0,
+      "weight_task_position_transport": 100.0,
+      "weight_task_orientation_transport": 100.0,
+      "weight_time": 4.0
+    },
+    "x0_x1_x2_sweep_summary": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_single_insert_paper_table_repro_20260826_171900/sweep_summary.json"
+  },
+  "execution": {
+    "source_dt_s": 0.01,
+    "reference_stride": 1,
+    "duration_s": 8.314058873582937,
+    "sample_count": 833,
+    "left_path_sha256": "9c38710c6d5aa330523e4115516bcfde5420b495b8d12d95be43551deb928d2d",
+    "right_path_sha256": "81e99c4cfcdeb1b6bba876c923dc459bdbe30e90e7ac7fd8772a514614065be7",
+    "sample_times_sha256": "4f4c9ed132bebf0d25d61f9a3fbef99189240657019f9598fac3e2a9da1b36d9"
+  },
+  "continuous_kinematics": {
+    "valid": true,
+    "continuous_polynomial_check": true,
+    "maximum_joint_position_violation_rad": 0.0,
+    "maximum_joint_velocity_violation_rad_s": 0.0,
+    "left_max_velocity_rad_s": [
+      0.3987255660695471,
+      0.4750370602683462,
+      0.574074140932416,
+      0.4816949087931652,
+      0.39102020104109014,
+      0.7627254180771305
+    ],
+    "right_max_velocity_rad_s": [
+      0.43448404502799903,
+      0.2742513461735248,
+      0.7922782334635662,
+      0.8868480314002366,
+      0.3083278333156764,
+      0.9180681454794964
+    ]
+  },
+  "post_fcl_acceptance_gate": {
+    "performed": true,
+    "accepted_for_control": true,
+    "valid": true,
+    "invalid_sample_count": 0,
+    "role": "post-optimization success criterion only",
+    "used_as_cost_or_gradient": false
+  },
+  "catch_reference": {
+    "source_run": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/move_fcl_boundary_20260820_102820/deviation_0.000000000",
+    "left_path_sha256": "344a0bbd5f542c602234913dfa056fa34073a87c9afb4271baf3c2222e2b5140",
+    "right_path_sha256": "87960cd2505dfee92bc70b6ec917d500097ab735c4462d0202b75e8f2f89f33b"
+  },
+  "source_controller_run": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_grasp_single_knot_strict_repro_20260826_194000/selected_x1_controller",
+  "trajectory_optimization_by_phase": {
+    "move": {
+      "architecture": "two_process_distributed_cubic_trajectory_optimization",
+      "samples_per_segment_including_endpoints": 3,
+      "interior_optimization_samples_per_segment": 1,
+      "weight_time": 4.0,
+      "collision_cost_in_objective": false,
+      "collision_gradient_used": false,
+      "options_sha256": "834ba58aba706ac04d5f908b80eac9777881a8f4ed40eee60acb953ef8980ff4",
+      "weights": {
+        "weight_path": 1.0,
+        "weight_velocity": 4.0,
+        "weight_joint_limit": 100.0,
+        "weight_velocity_limit": 100.0,
+        "weight_task_position_transport": 100.0,
+        "weight_task_orientation_transport": 100.0,
+        "weight_time": 4.0
+      },
+      "x0_x1_x2_sweep_summary": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_single_insert_paper_table_repro_20260826_171900/sweep_summary.json"
+    },
+    "catch": {
+      "architecture": "two_process_distributed_cubic_trajectory_optimization",
+      "samples_per_segment_including_endpoints": 3,
+      "interior_optimization_samples_per_segment": 1,
+      "optimizable_internal_trajectory_knots_per_arm": 1,
+      "temporal_reference_tube": {
+        "source_total_duration_s": 2.580584814840417,
+        "piece_count": 2,
+        "reference_piece_duration_s": 1.2902924074202085,
+        "ratio": 1.03,
+        "minimum_piece_duration_s": 1.2527110751652508,
+        "maximum_piece_duration_s": 1.3290011796428147
+      },
+      "weights": {
+        "weight_path": 150.0,
+        "weight_velocity": 1.0,
+        "weight_joint_limit": 1000.0,
+        "weight_velocity_limit": 1000.0,
+        "weight_task_position_grasp": 10000000.0,
+        "weight_task_orientation_grasp": 10000000.0,
+        "weight_time": 1.0
+      },
+      "weight_time": 1.0,
+      "collision_cost_in_objective": false,
+      "collision_gradient_used": false,
+      "x0_x1_x2_sweep_summary": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_grasp_single_knot_strict_repro_20260826_195000/sweep_summary.json",
+      "options_sha256": "a422096d4c398057963239a3f5ab6c6e05b802d1affa8b949a623db8396e2077"
+    }
+  },
+  "execution_by_phase": {
+    "move": {
+      "source_dt_s": 0.01,
+      "reference_stride": 1,
+      "duration_s": 8.314058873582937,
+      "sample_count": 833,
+      "left_path_sha256": "9c38710c6d5aa330523e4115516bcfde5420b495b8d12d95be43551deb928d2d",
+      "right_path_sha256": "81e99c4cfcdeb1b6bba876c923dc459bdbe30e90e7ac7fd8772a514614065be7",
+      "sample_times_sha256": "4f4c9ed132bebf0d25d61f9a3fbef99189240657019f9598fac3e2a9da1b36d9"
+    },
+    "catch": {
+      "source_dt_s": 0.01,
+      "reference_stride": 1,
+      "duration_s": 2.6178784941100677,
+      "sample_count": 263,
+      "left_path_sha256": "d64405c11223726fe5a9425ccfcc36ee3b3237f78042ce28606ff25f7acf4270",
+      "right_path_sha256": "efda66c525b66736ed1b5fe5b9015d1290b29ad95442a3ab893e9a119ec857f4",
+      "sample_times_sha256": "9dc24be9e967ecdb3b62e272ae1bec455a9b126fd568fdefa26bf4943292f57c"
+    }
+  },
+  "post_fcl_acceptance_gate_by_phase": {
+    "move": {
+      "performed": true,
+      "accepted_for_control": true,
+      "valid": true,
+      "invalid_sample_count": 0,
+      "role": "post-optimization success criterion only",
+      "used_as_cost_or_gradient": false
+    },
+    "catch": {
+      "performed": true,
+      "accepted_for_control": true,
+      "valid": true,
+      "invalid_sample_count": 0,
+      "role": "post-optimization success criterion only",
+      "used_as_cost_or_gradient": false
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<launch>
+  <arg name="paused" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="command_enabled" default="true"/>
+  <arg name="grasp_plugin_lib_dir"
+       default="$(env HOME)/catkin_gripper/devel/lib"/>
+
+  <include file="$(find cm_ball)/launch/world.launch">
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="grasp_plugin_lib_dir" value="$(arg grasp_plugin_lib_dir)"/>
+  </include>
+
+  <node pkg="cm_ball" type="sim_left.py" name="cm_ball_sim_left"
+        output="screen"
+        args="--receive-port 55005 --send-port 55006 --joint-timeout 120">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+  </node>
+  <node pkg="cm_ball" type="sim_right.py" name="cm_ball_sim_right"
+        output="screen"
+        args="--receive-port 55006 --send-port 55005 --joint-timeout 120">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+  </node>
+</launch>

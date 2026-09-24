@@ -1,0 +1,43 @@
+{
+  "name": "x1_baseline",
+  "weights": {
+    "weight_path": 1.0,
+    "weight_velocity": 4.0,
+    "weight_joint_limit": 100.0,
+    "weight_velocity_limit": 100.0,
+    "weight_task_position_transport": 100.0,
+    "weight_task_orientation_transport": 100.0,
+    "weight_time": 4.0
+  },
+  "metrics": {
+    "return_code": 0,
+    "optimization_completed": true,
+    "successful": true,
+    "native_fcl_valid": true,
+    "native_invalid_samples": 0,
+    "native_failure_reasons": {},
+    "continuous_kinematics_valid": true,
+    "duration_s": 8.314058873582937,
+    "path_length_sum_rad": 10.256710474770866,
+    "joint_velocity_cost_sum": 7.711833728745876,
+    "optimization_wall_time_max_s": 0.2544611099874601,
+    "left_iterations": 120,
+    "right_iterations": 120,
+    "left_converged": false,
+    "right_converged": false,
+    "source_sample_count": 833
+  },
+  "fixed_x1_objective": {
+    "total": 75.7588693118399,
+    "components": {
+      "path": 11.62891571501683,
+      "velocity": 30.873718102491317,
+      "joint_position": 0.0,
+      "joint_velocity": 0.0,
+      "task_position": 0.0,
+      "task_orientation": 0.0,
+      "time": 33.25623549433175
+    }
+  },
+  "directory": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_single_insert_paper_table_repro_20260826_171900/cases/x1_baseline"
+}

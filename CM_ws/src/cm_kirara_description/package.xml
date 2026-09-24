@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cm_kirara_description</name>
+  <version>1.0.0</version>
+  <description>Self-contained KIRARA robot mesh resources for CM_ws.</description>
+  <maintainer email="mas-2@example.com">mas-2</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

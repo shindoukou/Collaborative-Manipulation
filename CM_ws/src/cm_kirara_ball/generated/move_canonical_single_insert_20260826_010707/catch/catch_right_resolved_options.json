@@ -1,0 +1,44 @@
+{
+  "joint_min": [
+    -3.141592653589793,
+    -3.141592653589793,
+    -3.141592653589793,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_max": [
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "velocity_max": [
+    2.16,
+    2.16,
+    3.15,
+    3.2,
+    3.2,
+    3.2
+  ],
+  "maximum_knot_deviation": 0.05,
+  "weight_path": 1.0,
+  "weight_velocity": 1.0,
+  "weight_joint_limit": 100.0,
+  "weight_velocity_limit": 100.0,
+  "weight_task_position": 100.0,
+  "weight_task_orientation": 100.0,
+  "weight_task_position_grasp": 100.0,
+  "weight_task_orientation_grasp": 100.0,
+  "weight_task_position_transport": 100.0,
+  "weight_task_orientation_transport": 100.0,
+  "weight_time": 0.05,
+  "task_distance_min": 0.24,
+  "task_distance_max": 0.249,
+  "task_orientation_cos_min": 0.9210609940028851,
+  "phase": "catch",
+  "constraint_profile_source": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/config/catch_template.yaml",
+  "weight_provenance": "absolute trajectory-smoothing weights are not published in main20260815gpt.tex"
+}

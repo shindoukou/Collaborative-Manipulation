@@ -1,0 +1,43 @@
+{
+  "name": "x1_baseline",
+  "weights": {
+    "weight_path": 150.0,
+    "weight_velocity": 1.0,
+    "weight_joint_limit": 1000.0,
+    "weight_velocity_limit": 1000.0,
+    "weight_task_position_grasp": 10000000.0,
+    "weight_task_orientation_grasp": 10000000.0,
+    "weight_time": 1.0
+  },
+  "metrics": {
+    "return_code": 0,
+    "optimization_completed": true,
+    "successful": true,
+    "native_fcl_valid": true,
+    "native_invalid_samples": 0,
+    "native_failure_reasons": {},
+    "continuous_kinematics_valid": true,
+    "duration_s": 2.6178784941100677,
+    "path_length_sum_rad": 3.380426552933399,
+    "joint_velocity_cost_sum": 2.6179008003079653,
+    "optimization_wall_time_max_s": 0.36584662899258547,
+    "left_iterations": 323,
+    "right_iterations": 323,
+    "left_converged": true,
+    "right_converged": true,
+    "source_sample_count": 263
+  },
+  "fixed_x1_objective": {
+    "total": 220.01226500460263,
+    "components": {
+      "path": 214.77598979738215,
+      "velocity": 2.6183967131104104,
+      "joint_position": 0.0,
+      "joint_velocity": 0.0,
+      "task_position": 0.0,
+      "task_orientation": 0.0,
+      "time": 2.6178784941100677
+    }
+  },
+  "directory": "/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_grasp_single_knot_strict_repro_20260826_195000/cases/x1_baseline"
+}

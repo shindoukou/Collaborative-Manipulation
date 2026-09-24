@@ -1,0 +1,42 @@
+{
+  "selection_policy": "Preserve the native-valid Box path geometry and optimize only segment time; reject the larger zero-collision boundary because its clearance is too small.",
+  "kinematics_alignment": {
+    "trajectory_optimization": "DH+FT300 endpoint and tool z-axis",
+    "dnmpc": "DH+FT300 endpoint and tool z-axis",
+    "identical_coordinate_definition": true
+  },
+  "reference_preparation": {
+    "source_samples": 1258,
+    "selected_existing_knots": 9,
+    "dense_native_validation_samples": 241,
+    "native_valid": true,
+    "collision_repair_or_projection_used": false
+  },
+  "selected": {
+    "maximum_knot_deviation_rad": 0.0,
+    "spatial_step": 0.0,
+    "duration_s": 9.21681533230107,
+    "sample_count": 923,
+    "minimum_clearance_m": 0.003661913042882361,
+    "minimum_pair": ["obs_box_platform_0", "target_box_0"],
+    "paper_penalty_costs_zero": true,
+    "native_box_constraints_valid": true,
+    "fcl_invalid_sample_count": 0
+  },
+  "largest_accepted_boundary": {
+    "maximum_knot_deviation_rad": 0.008984375,
+    "spatial_step": 0.00359375,
+    "duration_s": 9.12039681468502,
+    "minimum_clearance_m": 0.00018458918586290453,
+    "native_box_constraints_valid": true,
+    "fcl_invalid_sample_count": 0,
+    "selected": false,
+    "rejection_reason": "Only 0.185 mm clearance remained."
+  },
+  "first_rejected_boundary": {
+    "maximum_knot_deviation_rad": 0.009375,
+    "native_box_constraints_valid": false
+  },
+  "collision_in_objective_or_gradient": false,
+  "collision_repair_projection_or_blending_used": false
+}

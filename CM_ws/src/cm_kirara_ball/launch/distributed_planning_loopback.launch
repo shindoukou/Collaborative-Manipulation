@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="phase" default="catch"/>
+  <arg name="config" default="$(find cm_kirara_ball)/config/catch_template.yaml"/>
+  <arg name="output_dir" default="/tmp/cm_kirara_ball_distributed"/>
+  <arg name="port" default="55105"/>
+  <arg name="max_iterations" default="20000"/>
+  <arg name="kirara_iterations" default="120"/>
+
+  <!-- The right planning node owns the TCP server in the one-host test. -->
+  <node name="cm_kirara_$(arg phase)_right" pkg="cm_kirara_ball"
+        type="cm_distributed_planner_node.py" output="screen"
+        args="--role right --phase $(arg phase) --config $(arg config)
+              --output-dir $(arg output_dir) --port $(arg port)
+              --max-iterations $(arg max_iterations)
+              --kirara-iterations $(arg kirara_iterations)"/>
+
+  <node name="cm_kirara_$(arg phase)_left" pkg="cm_kirara_ball"
+        type="cm_distributed_planner_node.py" output="screen"
+        args="--role left --phase $(arg phase) --config $(arg config)
+              --output-dir $(arg output_dir) --peer-host 127.0.0.1
+              --port $(arg port) --max-iterations $(arg max_iterations)
+              --kirara-iterations $(arg kirara_iterations)"/>
+</launch>
