@@ -40,7 +40,7 @@ def render_pdf(source: Path, target: Path, pdftoppm: str) -> None:
     with tempfile.TemporaryDirectory(prefix="paper-figure-") as directory:
         prefix = Path(directory) / "page"
         subprocess.run(
-            [pdftoppm, "-f", "1", "-singlefile", "-png", "-r", "180", str(source), str(prefix)],
+            [pdftoppm, "-f", "1", "-singlefile", "-cropbox", "-png", "-r", "180", str(source), str(prefix)],
             check=True,
             stdout=subprocess.DEVNULL,
         )
@@ -75,33 +75,44 @@ def make_preview(source: Path, target: Path, pdftoppm: str | None) -> None:
             image.save(target)
 
 
-def synchronize(source_dir: Path, force: bool) -> int:
+def synchronize(source_dir: Path, force: bool, response_dir: Path | None = None) -> int:
     entries = json.loads(MANIFEST.read_text(encoding="utf-8"))
     pdftoppm = shutil.which("pdftoppm")
     changed = 0
+    response_skipped = False
     for entry in entries:
-        source = source_for(source_dir, entry["latex_reference"])
+        root = response_dir if entry.get("source_root") == "response" else source_dir
+        if root is None:
+            response_skipped = True
+            continue
+        source = source_for(root, entry["latex_reference"])
         target = REPO.joinpath(*entry["repository_path"].split("/"))
         if not force and target.exists() and source.stat().st_mtime_ns <= target.stat().st_mtime_ns:
             continue
         make_preview(source, target, pdftoppm)
         changed += 1
         print(f"Updated {entry['repository_path']} from {source}")
+    if response_skipped:
+        print("Response-letter images skipped: pass --response-dir to update them.")
     return changed
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-dir", type=Path, required=True, help="Directory containing the manuscript's original images")
+    parser.add_argument("--response-dir", type=Path, help="Response template directory, for figures that differ from the manuscript")
     parser.add_argument("--watch", action="store_true", help="Keep local previews in sync while this command runs")
     parser.add_argument("--force", action="store_true", help="Rebuild every preview, even when the source timestamp is older")
     args = parser.parse_args()
     if not args.source_dir.is_dir():
         parser.error(f"Source directory does not exist: {args.source_dir}")
 
+    if args.response_dir is not None and not args.response_dir.is_dir():
+        parser.error(f"Response directory does not exist: {args.response_dir}")
+
     try:
         while True:
-            changed = synchronize(args.source_dir, args.force)
+            changed = synchronize(args.source_dir, args.force, args.response_dir)
             print(f"Synchronized {changed} image(s).")
             if not args.watch:
                 break

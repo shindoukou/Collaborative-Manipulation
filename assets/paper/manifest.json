@@ -40,8 +40,8 @@
     "repository_path": "assets/paper/forcereview_v2.png"
   },
   {
-    "latex_reference": "阻抗5.png",
-    "repository_path": "assets/paper/impedance-adaptation.jpg"
+    "latex_reference": "阻抗7.pdf",
+    "repository_path": "assets/paper/impedance-adaptation.png"
   },
   {
     "latex_reference": "simulation/ball1.png",
@@ -498,5 +498,35 @@
   {
     "latex_reference": "EXP08/pourbox/force_during_pouring.pdf",
     "repository_path": "assets/paper/EXP08/pourbox/force_during_pouring.png"
+  },
+  {
+    "latex_reference": "FRpic/ball/1.PNG",
+    "repository_path": "assets/response/FRpic/ball/1.jpg",
+    "source_root": "response"
+  },
+  {
+    "latex_reference": "FRpic/ball/2.png",
+    "repository_path": "assets/response/FRpic/ball/2.jpg",
+    "source_root": "response"
+  },
+  {
+    "latex_reference": "FRpic/ball/3.png",
+    "repository_path": "assets/response/FRpic/ball/3.jpg",
+    "source_root": "response"
+  },
+  {
+    "latex_reference": "FRpic/ball/4.png",
+    "repository_path": "assets/response/FRpic/ball/4.jpg",
+    "source_root": "response"
+  },
+  {
+    "latex_reference": "FRpic/ball/5.png",
+    "repository_path": "assets/response/FRpic/ball/5.jpg",
+    "source_root": "response"
+  },
+  {
+    "latex_reference": "FRpic/ball/6.png",
+    "repository_path": "assets/response/FRpic/ball/6.jpg",
+    "source_root": "response"
   }
 ]

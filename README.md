@@ -69,7 +69,7 @@ This work presents an integrated framework for dual-arm manipulation in narrow s
 #### Adaptive impedance and desired-force design
 
 <p align="center">
-  <img src="assets/paper/impedance-adaptation.jpg" alt="Adaptive force design 1" width="32%">
+  <img src="assets/paper/impedance-adaptation.png" alt="Adaptive force design 1" width="32%">
   <img src="assets/paper/Visio-Desired_Force_why_v2_a.png" alt="Adaptive force design 2" width="32%">
   <img src="assets/paper/Visio-Desired_Force_why_v3_b.png" alt="Adaptive force design 3" width="32%">
 </p>
@@ -124,6 +124,17 @@ This work presents an integrated framework for dual-arm manipulation in narrow s
   <img src="assets/paper/FRpic/ball/4.jpg" alt="Ball experiment frame 4" width="15.7%">
   <img src="assets/paper/FRpic/ball/5.jpg" alt="Ball experiment frame 5" width="15.7%">
   <img src="assets/paper/FRpic/ball/6.jpg" alt="Ball experiment frame 6" width="15.7%">
+</p>
+
+### Ball sequence used in the response letter
+
+<p align="center">
+  <img src="assets/response/FRpic/ball/1.jpg" alt="Response-letter ball experiment frame 1" width="15.7%">
+  <img src="assets/response/FRpic/ball/2.jpg" alt="Response-letter ball experiment frame 2" width="15.7%">
+  <img src="assets/response/FRpic/ball/3.jpg" alt="Response-letter ball experiment frame 3" width="15.7%">
+  <img src="assets/response/FRpic/ball/4.jpg" alt="Response-letter ball experiment frame 4" width="15.7%">
+  <img src="assets/response/FRpic/ball/5.jpg" alt="Response-letter ball experiment frame 5" width="15.7%">
+  <img src="assets/response/FRpic/ball/6.jpg" alt="Response-letter ball experiment frame 6" width="15.7%">
 </p>
 
 ### Box
