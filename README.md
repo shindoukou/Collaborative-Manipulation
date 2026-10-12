@@ -3,7 +3,7 @@
 <p align="center"><strong>A visual project page for safe, coordinated dual-arm grasping and transport in constrained workspaces.</strong></p>
 
 <p align="center">
-  <img src="assets/paper/systemV7.png" alt="Overview of the proposed dual-arm manipulation framework" width="100%">
+  <img src="assets/paper/systemV8.png" alt="Overview of the proposed dual-arm manipulation framework" width="100%">
 </p>
 
 ## Code snapshot
@@ -55,7 +55,7 @@ This work presents an integrated framework for dual-arm manipulation in narrow s
 ### Distributed nonlinear model predictive control
 
 <p align="center">
-  <img src="assets/paper/Visicontrolblock6.png" alt="Distributed NMPC control architecture" width="92%">
+  <img src="assets/paper/controlblock7.png" alt="Distributed NMPC control architecture" width="92%">
 </p>
 
 ### Bilateral position-force control

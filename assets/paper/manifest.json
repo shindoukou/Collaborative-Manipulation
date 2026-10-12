@@ -12,8 +12,8 @@
     "repository_path": "assets/paper/coordinate-system.png"
   },
   {
-    "latex_reference": "systemV7.pdf",
-    "repository_path": "assets/paper/systemV7.png"
+    "latex_reference": "systemV8.pdf",
+    "repository_path": "assets/paper/systemV8.png"
   },
   {
     "latex_reference": "algo1_9.pdf",
@@ -28,8 +28,8 @@
     "repository_path": "assets/paper/constraint_transport6.png"
   },
   {
-    "latex_reference": "Visicontrolblock6.pdf",
-    "repository_path": "assets/paper/Visicontrolblock6.png"
+    "latex_reference": "controlblock7.pdf",
+    "repository_path": "assets/paper/controlblock7.png"
   },
   {
     "latex_reference": "force7.pdf",
