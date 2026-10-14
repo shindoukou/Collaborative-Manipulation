@@ -136,7 +136,7 @@ For $w_{\mathrm{b}i}$, the zero setting retains 100% success and reduces force R
 
 For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selected value of 10 achieves 100%. Increasing it to 20 reduces success to 7% and increases force RMSE by 30.77%. These results support the selected gains for the tested conditions. The baseline setpoint-force stabilization rate is 0%, so this comparison is parameter screening rather than final validation of force regulation.
 
-### Real-world experiment parameters: target ball
+### Real-world experiment parameters
 
 | Parameter | Grasping | Transporting |
 | --- | --- | --- |
