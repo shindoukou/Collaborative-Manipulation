@@ -359,6 +359,15 @@ For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selec
   <img src="assets/paper/EXP08/cloth/d_f_legend2.png" alt="Legend for additional-target force plots" width="72%">
 </p>
 
+Foam-frame transporting-force statistics with AIC (N):
+
+| EE | Desired force | Maximum | Minimum | Mean | RMSE |
+|---|---:|---:|---:|---:|---:|
+| L | 4.10 | 4.73 | 3.10 | 3.98 | 0.45 |
+| R | 4.10 | 5.56 | 3.65 | 4.48 | 0.66 |
+
+Statistics use the compensated force traces from the updated experiment.
+
 ## Fault-tolerance demonstration
 
 ### Left-arm interruption
