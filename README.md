@@ -140,7 +140,7 @@ For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selec
 
 | Parameter | Grasping | Transporting |
 | --- | --- | --- |
-| Safety margin (m) | $0.005$ | $0.04$ |
+| Safety margin (m) | $0.005$ | $0.039$ |
 | Allowable orientation to the other arm, left arm (rad) | $0.318$ | $0.30$ |
 | Allowable orientation to the other arm, right arm (rad) | $0.40$ | $0.35$ |
 | Allowable orientation to the target, left arm (rad) | $0.25$ | $0.25$ |
@@ -150,7 +150,7 @@ For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selec
 
 | Parameter | Grasping | Transporting |
 | --- | --- | --- |
-| Safety margin (m) | $0.005$ | $0.03$ |
+| Safety margin (m) | $0.005$ | $0.045$ |
 | Allowable orientation to the other arm, left arm (rad) | $0.318$ | $0.35$ |
 | Allowable orientation to the other arm, right arm (rad) | $0.25$ | $0.318$ |
 | Allowable orientation to the target, left arm (rad) | $\pi$ | $\pi$ |
