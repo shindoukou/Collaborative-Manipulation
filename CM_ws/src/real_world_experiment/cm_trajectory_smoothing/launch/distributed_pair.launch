@@ -1,0 +1,16 @@
+<launch>
+  <arg name="object" default="ball" />
+  <arg name="phase" default="move" />
+  <arg name="left_path" />
+  <arg name="right_path" />
+  <arg name="output_dir" />
+  <arg name="constraint_config" />
+  <arg name="port" default="55831" />
+
+  <!-- The upstream planning stage performs collision checking. This runner
+       performs only the paper-style distributed gradient descent. It neither
+       differentiates an FCL term nor rechecks FCL after optimization. -->
+  <node pkg="cm_trajectory_smoothing" type="run_distributed_trajopt_pair.py"
+        name="cm_distributed_trajopt_pair" output="screen"
+        args="--left-path $(arg left_path) --right-path $(arg right_path) --output-dir $(arg output_dir) --object $(arg object) --phase $(arg phase) --port $(arg port) --constraint-config $(arg constraint_config)" />
+</launch>

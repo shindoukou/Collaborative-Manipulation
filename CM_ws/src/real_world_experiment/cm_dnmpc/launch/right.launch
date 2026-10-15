@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="object" default="ball"/>
+  <arg name="runtime" default="sim"/>
+  <arg name="phase" default="move"/>
+  <arg name="bind_host" default="$(eval '192.168.1.90' if arg('runtime') == 'real' else '0.0.0.0')"/>
+  <arg name="peer_host" default="$(eval '192.168.1.80' if arg('runtime') == 'real' else '127.0.0.1')"/>
+  <arg name="port" default="55005"/>
+  <arg name="command_enabled" default="false"/>
+  <arg name="force_topic" default="/right_ft300/robotiq_ft_sensor"/>
+  <node name="right_controller" pkg="cm_dnmpc" type="controller_node.py" output="screen"
+        args="--side right --object $(arg object) --runtime $(arg runtime) --phase $(arg phase) --bind-host $(arg bind_host) --peer-host $(arg peer_host) --port $(arg port)">
+    <param name="command_enabled" value="$(arg command_enabled)"/>
+    <param name="force_topic" value="$(arg force_topic)"/>
+  </node>
+</launch>

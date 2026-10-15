@@ -1,12 +1,3 @@
-r"""Update the README image copies from the manuscript's original figure directory.
-
-Usage:
-    py -3 scripts/sync_paper_images.py --source-dir "F:\\BaiduSyncdisk\\0728latex"
-    py -3 scripts/sync_paper_images.py --source-dir "F:\\BaiduSyncdisk\\0728latex" --watch
-
-The source directory remains the authority. GitHub displays copies in this repo;
-it cannot read files from a visitor's local F: drive.
-"""
 
 from __future__ import annotations
 

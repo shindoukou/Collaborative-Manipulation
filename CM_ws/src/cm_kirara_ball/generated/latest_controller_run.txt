@@ -1,1 +1,0 @@
-/home/mas-2/3rd_party/CM_ws/src/cm_kirara_ball/generated/trajopt_weight_sweep_grasp_single_knot_strict_repro_20260826_195000/selected_x1_controller

@@ -1,0 +1,39 @@
+{
+  "manuscript": "main20261009.tex",
+  "hardware_validated": false,
+  "grasping_size_m": 0.18,
+  "catch_margin_m": 0.005,
+  "move_margin_m": 0.039,
+  "catch": {
+    "theta_left": 0.25,
+    "theta_right": 0.2,
+    "psi_left": 0.25,
+    "psi_right": 0.2
+  },
+  "move": {
+    "theta_left": 0.5,
+    "theta_right": 0.536,
+    "psi_left": 0.25,
+    "psi_right": 0.21
+  },
+  "smoothing_weights": {
+    "weight_path": 10.0,
+    "weight_velocity": 1.0,
+    "weight_joint_limit": 1000.0,
+    "weight_velocity_limit": 1000.0,
+    "weight_task_position": 1000.0,
+    "weight_task_orientation": 1000.0,
+    "weight_task_position_grasp": 1000.0,
+    "weight_task_orientation_grasp": 1000.0,
+    "weight_task_position_transport": 1000.0,
+    "weight_task_orientation_transport": 1000.0,
+    "weight_time": 1.0
+  },
+  "notes": [
+    "Distances use the paper grasping size and config/objects real margins; transport margin is the user-selected base plus 0.005 m, not a new hardware validation.",
+    "Real-only overlay; simulation templates and selected paths are unchanged.",
+    "Ball table transport theta labels are read as transport left/right; duplicated psi-left label is read as left/right column order.",
+    "Move must start at the measured Stage2 joint configuration, not the Catch endpoint.",
+    "Robot/obstacle calibration is not specified by this parameter table; validate the scene before physical execution."
+  ]
+}

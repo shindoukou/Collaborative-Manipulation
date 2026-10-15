@@ -1,0 +1,115 @@
+schema_version: 1
+object:
+  id: box
+  display_name: Box
+  mass_kg: 0.38
+  grasping_size_m: 0.25
+  mean_slip_onset_force_n: 14.8
+status:
+  physical_parameters_migrated: true
+  hardware_validated: false
+  weight_status: paper_1009_ball_schedule_shared_by_user_request
+controller:
+  control_period_s: 0.02
+  horizon: 5
+  command_semantics:
+    position: q_plus_u_dt
+    velocity: dnmpc_u0
+reference:
+  source_dt_s: 0.01
+  stride:
+    catch: 4
+    move: 4
+  package: null
+  paths:
+    catch:
+      left: null
+      right: null
+    move:
+      left: null
+      right: null
+real_io:
+  joint_state_topic: /joint_states
+  command_topic: /{side}/scaled_pos_joint_traj_controller/command
+  force_topic: /{side}_ft300/robotiq_ft_sensor
+  force_type: robotiq
+paper_elastic:
+  catch:
+    k0: 1000.0
+    wb: 100.0
+    wk: 20.0
+    b0: 0.0
+    desired_force_n: 22.2
+    object_length_m: 0.25
+    max_displacement_m: 0.001
+  move:
+    k0: 1000.0
+    wb: 1.0
+    wk: 20.0
+    b0: 0.0
+    desired_force_n: 22.2
+    object_length_m: 0.25
+    max_displacement_m: 0.015
+stage_transition:
+  '2':
+    desired_force_n: 22.2
+    force_tolerance_n: 4.0
+    sim_stiffness_n_m: 10000.0
+    endpoint_tolerance_m: 0.02
+    stable_cycles: 10
+    max_duration_s: 12.0
+  '4':
+    desired_force_n: 22.2
+    force_tolerance_n: 4.0
+    sim_stiffness_n_m: 10000.0
+    endpoint_tolerance_m: 0.01
+    stable_cycles: 10
+    max_duration_s: 12.0
+stage_weights:
+  '1':
+    Wd: 0.0
+    Wt: 0.0
+    Wo: 0.0
+    Wu: 0.01
+    Wq: 10.0
+    Wv: 5.0
+    WF: 0.0
+  '2':
+    Wd: 0.1
+    Wt: 0.5
+    Wo: 1.0
+    Wu: 0.01
+    Wq: 0.0
+    Wv: 0.0
+    WF: 1.0
+  '3':
+    Wd: 0.0
+    Wt: 40.0
+    Wo: 2.0
+    Wu: 0.02
+    Wq: 7.5
+    Wv: 3.0
+    WF: 100.0
+  '4':
+    Wd: 10.0
+    Wt: 1.5
+    Wo: 1.0
+    Wu: 0.01
+    Wq: 0.0
+    Wv: 0.0
+    WF: 1.0
+planning:
+  family: box
+  catch_margin_m: 0.005
+  move_margin_base_m: 0.040
+  move_margin_increment_m: 0.005
+  move_margin_m: 0.045
+  margin_source: user_selected_analysis_margins_20261015_not_hardware_validated
+paper_source:
+  manuscript: main20261009.tex
+  weight_table: tab:weight_parameters_ball
+  object_table: tab:desired_force_selection
+  other_object_weights: Ball schedule reused by explicit user request; not separately
+    reported in manuscript
+  adaptive_gains: Retained from existing object profile; numerical gains not specified
+    in the active manuscript text

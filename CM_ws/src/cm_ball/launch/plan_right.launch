@@ -1,3 +1,0 @@
-<launch>
-  <include file="$(find cm_kirara_ball)/launch/distributed_planning_right.launch"/>
-</launch>

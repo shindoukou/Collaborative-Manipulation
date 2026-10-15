@@ -1,0 +1,1 @@
+/home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/catch_reference

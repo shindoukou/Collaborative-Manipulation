@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-  <arg name="paused" default="true"/>
-  <arg name="gui" default="true"/>
-  <include file="$(find cm_kirara_box)/launch/ur5e_ur3_ft300_kirara_box.launch">
-    <arg name="paused" value="$(arg paused)"/>
-    <arg name="gui" value="$(arg gui)"/>
-  </include>
-</launch>

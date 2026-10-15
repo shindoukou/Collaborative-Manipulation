@@ -1,0 +1,229 @@
+{
+  "Ts": 0.02,
+  "horizon": 5,
+  "source_dt": 0.01,
+  "sim_command_points": 2,
+  "sim_command_start_step": 2,
+  "sim_stage_commands": {
+    "box": {
+      "3": {
+        "time_scale": 2.0
+      }
+    }
+  },
+  "reference_stride": {
+    "box": {
+      "catch": 1,
+      "move": 1
+    }
+  },
+  "weights": {
+    "Wd": 50.0,
+    "Wt": 20.0,
+    "Wo": 10.0,
+    "Wu": 1.0,
+    "Wq": 10.0,
+    "Wv": 0.2,
+    "WF": 0.01
+  },
+  "stage_weights": {
+    "default": {
+      "1": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.0
+      },
+      "2": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.01
+      },
+      "3": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.01
+      },
+      "4": {
+        "Wd": 50.0,
+        "Wt": 20.0,
+        "Wo": 10.0,
+        "Wu": 1.0,
+        "Wq": 10.0,
+        "Wv": 0.2,
+        "WF": 0.01
+      }
+    },
+    "box": {
+      "1": {
+        "Wd": 1,
+        "Wt": 2000,
+        "Wo": 10,
+        "Wu": 1,
+        "Wq": 200,
+        "Wv": 2,
+        "WF": 0
+      },
+      "2": {
+        "Wd": 100,
+        "Wt": 100000,
+        "Wo": 100,
+        "Wu": 1,
+        "Wq": 10000,
+        "Wv": 50,
+        "WF": 2
+      },
+      "3": {
+        "Wd": 50,
+        "Wt": 200000,
+        "Wo": 2000,
+        "Wu": 1,
+        "Wq": 20000,
+        "Wv": 1,
+        "WF": 0.05
+      },
+      "4": {
+        "Wd": 2000,
+        "Wt": 2000,
+        "Wo": 100,
+        "Wu": 1,
+        "Wq": 20,
+        "Wv": 1,
+        "WF": 0.02
+      }
+    }
+  },
+  "joint_min": [
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586,
+    -6.283185307179586
+  ],
+  "joint_max": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "input_max_rad_s": [
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793,
+    3.141592653589793
+  ],
+  "solver": {
+    "max_iter": 200,
+    "acceptable_tol": 1e-08,
+    "acceptable_obj_change_tol": 1e-06
+  },
+  "socket": {
+    "port": 55005,
+    "timeout_s": 0.018,
+    "stale_limit_s": 0.08,
+    "reconnect_s": 0.2
+  },
+  "force_projection": {
+    "minimum_separation_m": 1e-06,
+    "use_absolute": true,
+    "gravity_common_m_s2": [
+      0.0,
+      0.0,
+      -9.80665
+    ],
+    "left": {
+      "sensor_rpy_in_ee": [
+        0.0,
+        0.0,
+        1.5707963267948966
+      ],
+      "tool_mass_kg": 0.0
+    },
+    "right": {
+      "sensor_rpy_in_ee": [
+        0.0,
+        0.0,
+        1.5707963267948966
+      ],
+      "tool_mass_kg": 0.0
+    }
+  },
+  "paper_elastic": {
+    "box": {
+      "catch": {
+        "k0": 1000.0,
+        "wb": 200,
+        "wk": 20,
+        "b0": 0.0,
+        "desired_force_n": 25.0,
+        "object_length_m": 0.19535,
+        "max_displacement_m": 0.001
+      },
+      "move": {
+        "k0": 1000.0,
+        "wb": 200,
+        "wk": 40,
+        "b0": 0.0,
+        "desired_force_n": 25.0,
+        "object_length_m": 0.193,
+        "max_displacement_m": 0.015
+      }
+    }
+  },
+  "stage2": {
+    "box": {
+      "desired_force_n": 25.0,
+      "force_tolerance_n": 2.0,
+      "sim_stiffness_n_m": 892.0,
+      "endpoint_tolerance_m": 0.02,
+      "stable_cycles": 100,
+      "input_max_rad_s": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "input_max_rad_s_right": [
+        0.6,
+        0.02,
+        0.1766,
+        0.6,
+        0.6,
+        0.428
+      ],
+      "max_duration_s": 12.0
+    }
+  },
+  "stage4": {
+    "box": {
+      "desired_force_n": 25.0,
+      "force_tolerance_n": 2.0,
+      "sim_stiffness_n_m": 1666.6666666666667,
+      "endpoint_tolerance_m": 0.01,
+      "stable_cycles": 10,
+      "max_duration_s": 12.0
+    }
+  },
+  "simulation_reference": {
+    "package": "cm_trajectory_generation",
+    "directory": "generated/box/simulation_reference"
+  }
+}

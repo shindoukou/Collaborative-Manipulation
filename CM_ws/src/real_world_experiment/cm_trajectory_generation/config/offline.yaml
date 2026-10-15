@@ -1,0 +1,122 @@
+output_root: results/offline
+planning:
+  max_iterations: 20000
+  timeout_s: 900
+smoothing:
+  max_iterations: 80
+  output_dt: 0.01
+# Paths below are relative to CM_ws; absolute paths are also accepted.
+# Real scenes must describe the measured object, obstacles and robot bases.
+# stage2_joints is a TXT with left six then right six measured joint angles.
+objects:
+  simball:
+    family: ball
+    runtime: sim
+    phases: [catch, move]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    sim_scenes:
+      catch: src/real_world_experiment/cm_trajectory_generation/config/ball/catch_template.yaml
+      move: src/real_world_experiment/cm_trajectory_generation/config/ball/move_template.yaml
+    sim_options:
+      catch: null
+      move: src/real_world_experiment/cm_trajectory_generation/config/ball/move_selected_fcl_options.json
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  simbox:
+    family: box
+    runtime: sim
+    phases: [catch, move]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    sim_scenes:
+      catch: src/real_world_experiment/cm_trajectory_generation/config/box/catch_kirara_box.yaml
+      move: src/real_world_experiment/cm_trajectory_generation/config/box/move_kirara_box.yaml
+    sim_options:
+      catch: null
+      move: src/real_world_experiment/cm_trajectory_generation/config/box/move_selected_fcl_options.json
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  ball:
+    family: ball
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  box:
+    family: box
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  basketball:
+    family: ball
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  foam_frame:
+    family: box
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  plush_toy:
+    family: box
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  l_shaped_wire_mesh:
+    family: box
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}
+  clothes_filled_bag:
+    family: box
+    runtime: real
+    phases: [catch]
+    real_scenes:
+      catch: null
+      move: null
+    stage2_joints: null
+    smoothing_overrides:
+      catch: {}
+      move: {}

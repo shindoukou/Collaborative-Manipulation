@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="robot_ip" default="192.168.2.20"/>
+  <arg name="reverse_ip" default="192.168.1.90"/>
+  <arg name="reverse_port" default="50005"/>
+  <arg name="script_sender_port" default="50006"/>
+  <arg name="trajectory_port" default="50007"/>
+  <arg name="script_command_port" default="50008"/>
+<group ns="right">
+<arg name="controller_config_file" default="$(find ur_robot_driver)/config/ur3_controllers.yaml"/>
+<arg name="controllers" default="joint_state_controller scaled_pos_joint_traj_controller speed_scaling_state_controller force_torque_sensor_controller"  />
+<arg name="stopped_controllers" default="joint_group_vel_controller forward_joint_traj_controller forward_cartesian_traj_controller"/>
+<include file="$(find ur_description)/launch/load_ur3.launch">
+    <arg name="kinematics_params" value="$(find ur_description)/config/ur3/default_kinematics.yaml"/>
+</include>
+  <node name="ur_hardware_interface" pkg="ur_robot_driver" type="ur_robot_driver_node" output="screen" launch-prefix="" required="true">
+    <param name="robot_ip" type="str" value="$(arg robot_ip)"/>
+    <param name="reverse_ip" value="$(arg reverse_ip)"/>
+    <param name="reverse_port" type="int" value="$(arg reverse_port)"/>
+    <param name="script_sender_port" type="int" value="$(arg script_sender_port)"/>
+    <param name="trajectory_port" value="$(arg trajectory_port)"/>
+    <param name="script_command_port" value="$(arg script_command_port)"/>
+    <rosparam command="load" file="$(find ur_description)/config/ur3/default_kinematics.yaml" />
+    <param name="script_file" value="$(find ur_client_library)/resources/external_control.urscript"/>
+    <param name="output_recipe_file" value="$(find ur_robot_driver)/resources/rtde_output_recipe.txt"/>
+    <param name="input_recipe_file" value="$(find ur_robot_driver)/resources/rtde_input_recipe.txt"/>
+    <param name="headless_mode" value="false"/>
+    <param name="tf_prefix" value=""/>
+    <param name="use_tool_communication" value="false"/>
+    <param name="tool_voltage" value="0"/>
+    <param name="tool_parity" value="0"/>
+    <param name="tool_baud_rate" value="115200"/>
+    <param name="tool_stop_bits" value="1"/>
+    <param name="tool_rx_idle_chars" value="1.5"/>
+    <param name="tool_tx_idle_chars" value="3.5"/>
+    <param name="servoj_gain" value="2000"/>
+    <param name="servoj_lookahead_time" value="0.03"/>
+  </node>
+  
+  
+  <rosparam file="$(arg controller_config_file)" command="load"/>
+  
+  <node name="ros_control_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" args="$(arg controllers)" />
+  <node name="ros_control_stopped_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" args="--stopped $(arg stopped_controllers)" unless="$(eval arg('stopped_controllers') == '')"/>
+  <node name="controller_stopper" pkg="ur_robot_driver" type="controller_stopper_node" respawn="false" output="screen">
+    <remap from="robot_running" to="ur_hardware_interface/robot_program_running"/>
+    <rosparam param="consistent_controllers">
+       - "joint_state_controller"
+       - "speed_scaling_state_controller"
+       - "force_torque_sensor_controller"
+       - "robot_status_controller"
+    </rosparam>
+  </node>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+</group>
+</launch>

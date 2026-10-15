@@ -1,0 +1,125 @@
+ball_collision:
+  x: 0.4
+  y: 0.15
+  z: 0.62
+  r: 0.03
+arm:
+  r: 0.03
+cost:
+  eff: 0.2
+  rot: 3
+  cos: 0.9
+  cos_2: 0.9
+  object: 0.005
+ompl:
+  plantime: 60
+palnning:
+  lowbound: 0.16
+  upperbound: 0.18
+file_path:
+  pinocchio_file: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/models/box/urdf/catch_kirara_box.urdf
+model_path:
+  pinocchio_path: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/models/box
+kirara_path:
+  left: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_left_kirara.txt
+  right: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_right_kirara.txt
+planned_path:
+  left: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_planned_left.txt
+  right: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_planned_right.txt
+Joint_init:
+  joint_1: -1.256637061
+  joint_2: -1.5707
+  joint_3: 1.5707
+  joint_4: -1.5707
+  joint_5: 0
+  joint_6: 0
+  joint_7: 1.256637061
+  joint_8: -1.5707
+  joint_9: -1.5707
+  joint_10: -1.5707
+  joint_11: 0
+  joint_12: 0
+Joint_final:
+  joint_1: -0.5065060026550001
+  joint_2: -0.9571819366600001
+  joint_3: 1.6397699287499998
+  joint_4: -0.682591722532
+  joint_5: -0.5065059726730001
+  joint_6: 0.35991968745699987
+  joint_7: 0.000368928671612867
+  joint_8: -3.13236153602
+  joint_9: -0.14593470563900013
+  joint_10: -0.9621694001570003
+  joint_11: -1.0512272474727524e-07
+  joint_12: -0.9004408341090002
+goal_generator:
+  enabled: true
+  fallback_to_joint_final: true
+  target_from_reference: true
+  mode: CATCH
+  target:
+    x: 0.5379895
+    y: 0.0969192
+    z: 0.1635
+  distance_min: 0.315
+  distance_max: 0.335
+  theta_left: 0.318
+  theta_right: 0.25
+  psi_left: 3.141592653589793
+  psi_right: 3.141592653589793
+  axis_samples: 12
+  roll_samples: 2
+  ik_restarts: 64
+  ik_max_iterations: 250
+  local_seed_ratio: 0.5
+  local_seed_range: 0.8
+  ik_position_tolerance: 0.0001
+  ik_orientation_tolerance: 0.002
+  dedup_tolerance: 0.002
+  random_seed: 20260728
+  left_tip: left_tool0
+  right_tip: right_tool0
+  debug_file: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_ik_goal.log
+  output_file: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_ik_q.yaml
+box_goal_generator:
+  mode: CATCH
+  target_from_reference: false
+  orientation_from_reference: false
+  grasp_along_long_axis: true
+  include_reference_candidate: true
+  minimum_joint_change_from_reference: 0.0
+  stop_at_first_valid: true
+  allow_reference_collisions: false
+  allow_target_contact: false
+  center:
+    x: 0.5379895
+    y: 0.0969192
+    z: 0.0878345
+  grasp_center_offset:
+    x: 0.0
+    y: 0.0
+    z: 0.0756655
+  dimensions:
+    x: 0.17
+    y: 0.193
+    z: 0.101
+  rpy:
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  long_axis: y
+  grasp_normal_axis: x
+  parallel_tool_axis: auto
+  distance_min: 0.292
+  distance_max: 0.31
+  theta_left: 0.45
+  theta_right: 0.45
+  normal_tolerance: 0.55
+  parallel_tolerance: 0.55
+  midpoint_normal_tolerance: 0.08
+  pair_longitudinal_stagger: 0.0
+  pair_tangential_stagger: 0.01
+  longitudinal_margin: 0.05
+  longitudinal_samples: 5
+  output_file: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_vbox_parallel_long_edge_q.yaml
+  debug_file: /home/mas-2/3rd_party/CM_ws/src/real_world_experiment/cm_trajectory_generation/generated/box/staging/catch_vbox_parallel_long_edge.log
