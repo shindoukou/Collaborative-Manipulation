@@ -260,13 +260,13 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
 ### Ball
 
 <p align="center">
-  <img src="assets/demos/simball/d1.gif" alt="Ball simulation animation" width="480">
+  <a href="assets/demos/simball/d1.gif"><img src="assets/demos-preview/simball/d1.gif" alt="Ball simulation animation" width="480" height="462"></a>
 </p>
 
 ### Box
 
 <p align="center">
-  <img src="assets/demos/simbox/d1.gif" alt="Box simulation animation" width="480">
+  <a href="assets/demos/simbox/d1.gif"><img src="assets/demos-preview/simbox/d1.gif" alt="Box simulation animation" width="480" height="414"></a>
 </p>
 
 ## Experimental platform and procedure
@@ -294,8 +294,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/ball/dAIC.gif" alt="Ball - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/ball/dWITHOUTAIC.gif" alt="Ball - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/ball/dAIC.gif"><img src="assets/demos-preview/ball/dAIC.gif" alt="Ball - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/ball/dWITHOUTAIC.gif"><img src="assets/demos-preview/ball/dWITHOUTAIC.gif" alt="Ball - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -307,8 +307,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/box/dAIC.gif" alt="Box - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/box/dWITHOUTAIC.gif" alt="Box - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/box/dAIC.gif"><img src="assets/demos-preview/box/dAIC.gif" alt="Box - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/box/dWITHOUTAIC.gif"><img src="assets/demos-preview/box/dWITHOUTAIC.gif" alt="Box - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -320,8 +320,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/basketball/dAIC.gif" alt="Basketball - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/basketball/dWITHOUTAIC.gif" alt="Basketball - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/basketball/dAIC.gif"><img src="assets/demos-preview/basketball/dAIC.gif" alt="Basketball - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/basketball/dWITHOUTAIC.gif"><img src="assets/demos-preview/basketball/dWITHOUTAIC.gif" alt="Basketball - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -333,8 +333,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/softbox/dAIC.gif" alt="Foam frame - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/softbox/dWITHOUTAIC.gif" alt="Foam frame - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/softbox/dAIC.gif"><img src="assets/demos-preview/softbox/dAIC.gif" alt="Foam frame - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/softbox/dWITHOUTAIC.gif"><img src="assets/demos-preview/softbox/dWITHOUTAIC.gif" alt="Foam frame - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -346,8 +346,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/mango/dAIC.gif" alt="Plush toy - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/mango/dWITHOUTAIC.gif" alt="Plush toy - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/mango/dAIC.gif"><img src="assets/demos-preview/mango/dAIC.gif" alt="Plush toy - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/mango/dWITHOUTAIC.gif"><img src="assets/demos-preview/mango/dWITHOUTAIC.gif" alt="Plush toy - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -359,8 +359,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/L/dAIC.gif" alt="L-shaped wire mesh - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/L/dWITHOUTAIC.gif" alt="L-shaped wire mesh - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/L/dAIC.gif"><img src="assets/demos-preview/L/dAIC.gif" alt="L-shaped wire mesh - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/L/dWITHOUTAIC.gif"><img src="assets/demos-preview/L/dWITHOUTAIC.gif" alt="L-shaped wire mesh - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -372,8 +372,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/cloth/dAIC.gif" alt="Clothes-filled bag - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/cloth/dWITHOUTAIC.gif" alt="Clothes-filled bag - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/cloth/dAIC.gif"><img src="assets/demos-preview/cloth/dAIC.gif" alt="Clothes-filled bag - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/cloth/dWITHOUTAIC.gif"><img src="assets/demos-preview/cloth/dWITHOUTAIC.gif" alt="Clothes-filled bag - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -461,8 +461,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without the proposed DNMPC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/fault/dLEFT-ON.gif" alt="Ball transporting under a left-controller fault - With the proposed DNMPC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/fault/dLEFT-OFF.gif" alt="Ball transporting under a left-controller fault - Without the proposed DNMPC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/fault/dLEFT-ON.gif"><img src="assets/demos-preview/fault/dLEFT-ON.gif" alt="Ball transporting under a left-controller fault - With the proposed DNMPC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/fault/dLEFT-OFF.gif"><img src="assets/demos-preview/fault/dLEFT-OFF.gif" alt="Ball transporting under a left-controller fault - Without the proposed DNMPC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -474,8 +474,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without the proposed DNMPC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/fault/dRIGHT-ON.gif" alt="Ball transporting under a right-controller fault - With the proposed DNMPC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/fault/dRIGHT-OFF.gif" alt="Ball transporting under a right-controller fault - Without the proposed DNMPC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/fault/dRIGHT-ON.gif"><img src="assets/demos-preview/fault/dRIGHT-ON.gif" alt="Ball transporting under a right-controller fault - With the proposed DNMPC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/fault/dRIGHT-OFF.gif"><img src="assets/demos-preview/fault/dRIGHT-OFF.gif" alt="Ball transporting under a right-controller fault - Without the proposed DNMPC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -503,8 +503,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/placeball/dAIC.gif" alt="Placing the ball into a box - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/placeball/dWITHOUTAIC.gif" alt="Placing the ball into a box - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/placeball/dAIC.gif"><img src="assets/demos-preview/placeball/dAIC.gif" alt="Placing the ball into a box - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/placeball/dWITHOUTAIC.gif"><img src="assets/demos-preview/placeball/dWITHOUTAIC.gif" alt="Placing the ball into a box - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
@@ -516,8 +516,8 @@ The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0
     <th align="center" width="50%">Without AIC algorithm</th>
   </tr>
   <tr>
-    <td align="center"><img src="assets/demos/pourbox/dAIC.gif" alt="Pouring the contents from one box into another box - With AIC algorithm" width="100%"></td>
-    <td align="center"><img src="assets/demos/pourbox/dWITHOUTAIC.gif" alt="Pouring the contents from one box into another box - Without AIC algorithm" width="100%"></td>
+    <td align="center"><a href="assets/demos/pourbox/dAIC.gif"><img src="assets/demos-preview/pourbox/dAIC.gif" alt="Pouring the contents from one box into another box - With AIC algorithm" width="320" height="180"></a></td>
+    <td align="center"><a href="assets/demos/pourbox/dWITHOUTAIC.gif"><img src="assets/demos-preview/pourbox/dWITHOUTAIC.gif" alt="Pouring the contents from one box into another box - Without AIC algorithm" width="320" height="180"></a></td>
   </tr>
 </table>
 
