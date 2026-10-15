@@ -6,6 +6,8 @@
 
 ## Overview
 
+**Experiment video:** [Watch the experiments on Bilibili](https://www.bilibili.com/video/BV1gCpU6mEQT/).
+
 This work presents an integrated framework for dual-arm manipulation in narrow spaces. It combines rapid constrained trajectory generation, distributed nonlinear model predictive control (DNMPC), and bilateral position-force control with adaptive impedance. Simulation and real-world experiments cover grasping, transporting, placing, and pouring with rigid, soft, irregular, and deformable targets.
 
 
