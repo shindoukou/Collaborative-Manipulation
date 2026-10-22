@@ -161,7 +161,7 @@ Success rates denote output feasibility, not numerical convergence. All $\times1
 
 Success rates denote output feasibility, not numerical convergence. All $\times1$ rows share the same Full baseline on the same 20-input diagnostic set, which is not an independent random test set. Full achieves feasibility in 20/20 cases and numerical convergence in 16/20 cases. Changes are means of per-input relative changes with respect to Full; all outputs, including infeasible or nonconverged outputs, are retained. Path cost denotes $J_{\mathrm{p}}$, not geometric arc length. For paired weights $(a,b)$, both weights are set to zero or doubled together; all other weights remain unchanged.
 
-### DNMPC weight matrices for the target ball
+### DNMPC weight matrices
 
 The weight matrices vary across the four manipulation stages. Here, $I_n$ is the $n$-dimensional identity matrix and $0_n$ is the $n\times n$ zero matrix.
 
@@ -218,9 +218,9 @@ Success rates are absolute values, whereas all other entries denote changes rela
 
 Each setting uses 20 reference trajectories with five repetitions, giving 100 runs. One adaptive parameter is changed at a time, and zero settings are used only for ablation. Failed runs are retained.
 
-For $w_{\mathrm{b}i}$, the zero setting retains 100% success and reduces force RMSE by 2.68%, but increases relative-position RMSE, joint-velocity RMSE, and command cost by 1.41%, 0.26%, and 0.05%. The selected value of 200 improves those motion-related quantities while retaining task success. Increasing it to 400 raises force RMSE by 2.41% and reduces success to 98% relative to the selected setting.
+For $w_{\mathrm{b}i}$, the zero setting retains 100% success and reduces force RMSE by 2.68%, but increases relative-position RMSE, joint-velocity RMSE, and command cost by 1.41%, 0.26%, and 0.05%. The selected value of 200 improves those motion-related quantities while retaining task success. Increasing it to 400 raises force RMSE by 2.41% and reduces success to 95% relative to the selected setting.
 
-For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selected value of 10 achieves 100%. Increasing it to 20 reduces success to 7% and increases force RMSE by 30.77%. These results support the selected gains for the tested conditions. The baseline setpoint-force stabilization rate is 0%, so this comparison is parameter screening rather than final validation of force regulation.
+For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selected value of 10 achieves 100%. Increasing it to 20 reduces success to 5% and increases force RMSE by 30.77%. These results support the selected gains for the tested conditions. The baseline setpoint-force stabilization rate is 0%, so this comparison is parameter screening rather than final validation of force regulation.
 
 #### Effects of the adaptive parameters
 
@@ -228,10 +228,10 @@ For $w_{\mathrm{k}i}$, setting it to zero reduces success to 0%, while the selec
 | --- | ---: | ---: | ---: | ---: | ---: |
 | $w_{\mathrm{b}i}=0$ | $100.00$ | $+1.41$ | $-2.68$ | $+0.26$ | $+0.05$ |
 | $w_{\mathrm{b}i}=200$ | $100.00$ | $0.00$ | $0.00$ | $0.00$ | $0.00$ |
-| $w_{\mathrm{b}i}=400$ | $\mathbf{98.00}$ | $-1.14$ | $+2.41$ | $-0.19$ | $-0.03$ |
+| $w_{\mathrm{b}i}=400$ | $\mathbf{95.00}$ | $-1.14$ | $+2.41$ | $-0.19$ | $-0.03$ |
 | $w_{\mathrm{k}i}=0$ | $\mathbf{0.00}$ | $+24.13$ | $-4.16$ | $+31.93$ | $+5.70$ |
 | $w_{\mathrm{k}i}=10$ | $100.00$ | $0.00$ | $0.00$ | $0.00$ | $0.00$ |
-| $w_{\mathrm{k}i}=20$ | $\mathbf{7.00}$ | $-10.35$ | $+30.77$ | $-1.41$ | $-0.26$ |
+| $w_{\mathrm{k}i}=20$ | $\mathbf{5.00}$ | $-10.35$ | $+30.77$ | $-1.41$ | $-0.26$ |
 
 The baseline settings are $w_{\mathrm{b}i}=200$, $w_{\mathrm{k}i}=10$, and $k_{0i}=500$, where $i$ denotes the arm. One parameter is varied at a time, while the others remain fixed. Each setting uses $20$ reference trajectories with $5$ repetitions, giving $100$ runs. Success rates are absolute values, and the other columns report percentage changes relative to the corresponding baseline. Failed runs are retained. Zero settings are used only for ablation. Bold values indicate success rates below the baseline. The baseline setpoint-force stabilization rate is $0%$, so these comparisons are used for parameter screening rather than final validation of force regulation.
 
